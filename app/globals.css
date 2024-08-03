@@ -23,6 +23,16 @@ nav,
 	padding: 1rem;
 }
 
+.content {
+	position: relative;
+	--delay-increment: 150ms;
+}
+
+.content > .cardcase:hover {
+	transform: translateY(-5px);
+	transition: all 400ms ease-in-out;
+}
+
 .font-jet {
 	font-family: "JetBrains Mono", monospace !important;
 }

@@ -54,14 +54,15 @@ export const caseStudies = [
 
 	{
 		title: "Honda Orico",
-		description: "Currently Work in Progress",
+		description:
+			"Honda Orico is a platform initiated by Honda Indonesia, designed to serve as a marketplace for reselling second-hand vehicles. Its primary purpose is to facilitate the buying and selling of pre-owned Honda vehicles, providing a trusted and reliable source for customers seeking quality used cars.",
 		date: "2024.05.29 - 2024.06.27",
 		colorBG: "bg-rose-500",
 		colorFont: "text-rose-500",
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/honda-orico",
-		status: "locked",
+		status: "active",
 	},
 
 	{

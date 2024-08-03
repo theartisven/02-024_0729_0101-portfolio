@@ -6,16 +6,16 @@ import { cards } from "./data";
 
 export default function CaseBMP() {
 	return (
-		<div className="content bg-neutral-100 min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
+		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
 				<Link
 					href={"/"}
-					className="outline-gray-500 flex flex-row items-center gap-2 outline-xs"
+					className="outline-neutral-500 flex flex-row items-center gap-2 outline-xs dark:text-white"
 				>
 					<RiArrowLeftSLine />
 					back
 				</Link>
-				<div className="font-jet outline-xl text-xl ">
+				<div className="font-jet outline-xl text-xl  dark:text-white">
 					Humble Sustainability
 				</div>
 				<div className="bg-green-500 outline-white outline-si w-fit px-3 py-1 rounded-full outline-xs flex items-center gap-2 text-white text-xs">
@@ -30,10 +30,10 @@ export default function CaseBMP() {
 					);
 				})}
 				<div
-					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-gray-300" // Ensure
+					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
 				>
 					<div className="flex flex-row justify-between">
-						<h1 className="font-jet text-3xl font-medium  text-gray-800">
+						<h1 className="font-jet text-3xl font-medium  text-neutral-800 dark:text-white">
 							//photos
 						</h1>
 					</div>

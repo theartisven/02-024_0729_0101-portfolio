@@ -7,16 +7,18 @@ import { cards } from "./data";
 
 export default function CaseBMP() {
 	return (
-		<div className="content bg-neutral-100 min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
+		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
 				<Link
 					href={"/"}
-					className="outline-gray-500 flex flex-row items-center gap-2 outline-xs"
+					className="outline-neutral-500 flex flex-row items-center gap-2 outline-xs dark:text-white"
 				>
 					<RiArrowLeftSLine />
 					back
 				</Link>
-				<div className="font-jet outline-xl text-xl ">Portfolio</div>
+				<div className="font-jet outline-xl text-xl  dark:text-white">
+					Portfolio
+				</div>
 				<div className="bg-orange-500 outline-white outline-si w-fit px-3 py-1 rounded-full outline-xs flex items-center gap-2 text-white text-xs">
 					<FaBrain />
 					ONGOING
