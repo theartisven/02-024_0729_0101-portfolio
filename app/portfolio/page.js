@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import CardIndex from "../../components/cardIndex";
+import CardIndex from "../_components/cardIndex";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { FaBrain } from "react-icons/fa";
 import Link from "next/link";

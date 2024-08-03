@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import CardIndex from "../../components/cardIndex";
+import CardIndex from "../_components/cardIndex";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { IoHourglassSharp } from "react-icons/io5";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function CaseBMP() {
 				<div className="font-jet outline-xl text-xl ">Honda Orico</div>
 				<div className="bg-rose-500 outline-white outline-si w-fit px-3 py-1 rounded-full outline-xs flex items-center gap-2 text-white text-xs">
 					<IoHourglassSharp />
-					STANDBY
+					STOP
 				</div>
 			</div>
 			<div className="flex flex-col gap-4 items-center justify-center h-100vh ">

@@ -13,6 +13,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/digital-shelf-and-ecommerce",
+		status: "active",
 	},
 	{
 		title: "Business Messaging Platform",
@@ -24,6 +25,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/business-messaging-platform",
+		status: "active",
 	},
 	{
 		title: "Humble Sustainability",
@@ -35,6 +37,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<SiAdobexd />],
 		href: "/humble-sustainability",
+		status: "active",
 	},
 	{
 		title: "Kansai Electric FTS",
@@ -46,6 +49,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/kansai-electric-fts",
+		status: "active",
 	},
 
 	{
@@ -57,6 +61,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/honda-orico",
+		status: "locked",
 	},
 
 	{
@@ -69,6 +74,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />, <RiNextjsFill />],
 		href: "/portfolio",
+		status: "active",
 	},
 	{
 		title: "Harman Kardon",
@@ -80,6 +86,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/harman-kardon",
+		status: "active",
 	},
 	{
 		title: "Pedigree Club PH",
@@ -91,16 +98,18 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/pedigree-club-ph",
+		status: "active",
 	},
 	{
 		title: "CPU App",
 		description:
 			"Central Philippine University (CPU) is a private university located in the Philippines. Founded in 1905 as the Jaro Industrial School, it has evolved through various transformations, including the establishment of a junior college in 1923 and attainment of university status in 1953. Today, CPU is a well-rounded institution offering a wide range of academic programs from basic education to postgraduate levels. The university is known for its rich history, academic excellence, and commitment to Christian values, making it one of the top private universities in the Philippines.",
-		date: "2018",
+		date: "2017",
 		colorBG: "bg-yellow-500",
 		colorFont: "text-yellow-500",
 		// eslint-disable-next-line react/jsx-key
 		icon: [<SiAdobexd />],
 		href: "/cpu-app",
+		status: "active",
 	},
 ];

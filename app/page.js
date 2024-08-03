@@ -1,4 +1,4 @@
-import CardCase from "../components/cardCase";
+import CardCase from "../app/_components/cardCase";
 
 import { caseStudies } from "./data";
 

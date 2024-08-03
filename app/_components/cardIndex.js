@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import "../app/globals.css";
+import "../globals.css";
 export default function CardIndex({
 	i = 0,
 	title = "Default Title",
@@ -17,10 +17,10 @@ export default function CardIndex({
 				<h1 className="font-jet text-3xl font-medium text-gray-800">
 					//{title}
 				</h1>
-				<div className="text-base text-gray-400"># {number}</div>
+				<div className="text-base text-gray-400">° {number}</div>
 			</div>
 
-			<div className="font-jet text-l text-gray-600 leading-[150%] tracking-[1.3%] max-h-[412px]">
+			<div className="font-jet text-l text-gray-500 leading-[150%] tracking-wide max-h-[412px] max-w-[84ch]">
 				{description}
 			</div>
 
@@ -31,7 +31,7 @@ export default function CardIndex({
 						className={`h-2 rounded-full ${
 							i + 1 === number ? `w-7 ${colorBG}` : "w-2 bg-white"
 						} outline outline-1 ${
-							i + 1 === number ? colorOutline : "outline-gray-300"
+							i + 1 === number ? colorOutline : "outline-gray-400"
 						}`}
 					></div>
 				))}

@@ -1,7 +1,7 @@
-import "../app/globals.css";
+import "../globals.css";
 import Image from "next/image";
 import Linkies from "./Linkies";
-import Logo from "../public/logo.png";
+import Logo from "../../public/logo.png";
 
 export default function Navbar() {
 	return (
