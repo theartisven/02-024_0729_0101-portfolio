@@ -1,11 +1,38 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import CardIndex from "../_components/cardIndex";
+import CardPhoto from "../_components/cardPhoto";
 import { RiArrowLeftSLine } from "react-icons/ri";
 import { IoHourglassSharp } from "react-icons/io5";
 import Link from "next/link";
 import { cards } from "./data";
 
-export default function CaseBMP() {
+export default function CaseStudy5() {
+	const images = [
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_1.webp",
+			alt: "honda-orico_1.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_2.webp",
+			alt: "honda-orico_2.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_3.webp",
+			alt: "honda-orico_3.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_4.webp",
+			alt: "honda-orico_4.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_5.webp",
+			alt: "honda-orico_5.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_6.webp",
+			alt: "honda-orico_6.webp",
+		},
+	];
 	return (
 		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
@@ -30,15 +57,7 @@ export default function CaseBMP() {
 						<CardIndex key={index} {...card} length={cards.length} i={index} />
 					);
 				})}
-				<div
-					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
-				>
-					<div className="flex flex-row justify-between">
-						<h1 className="font-jet text-3xl font-medium  text-neutral-800 dark:text-white">
-							//photos
-						</h1>
-					</div>
-				</div>
+				<CardPhoto images={images} />
 			</div>
 		</div>
 	);

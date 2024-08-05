@@ -1,10 +1,29 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import CardIndex from "../_components/cardIndex";
+import CardPhoto from "../_components/cardPhoto";
 import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
-export default function CaseBMP() {
+export default function CaseStudy4() {
+	const images = [
+		{
+			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_1.webp",
+			alt: "kansai-electric-fts_1.webp",
+		},
+		{
+			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_2.webp",
+			alt: "kansai-electric-fts_2.webp",
+		},
+		{
+			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_3.webp",
+			alt: "kansai-electric-fts_3.webp",
+		},
+		{
+			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_timelapse.webm",
+			alt: "kansai-electric-fts_timelapse.webm",
+		},
+	];
 	return (
 		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
@@ -29,13 +48,19 @@ export default function CaseBMP() {
 						<CardIndex key={index} {...card} length={cards.length} i={index} />
 					);
 				})}
-				<div
-					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
-				>
-					<div className="flex flex-row justify-between">
-						<h1 className="font-jet text-3xl font-medium  text-neutral-800 dark:text-white">
-							//photos
-						</h1>
+				<CardPhoto images={images} />
+				<div className="flex flex-col p-6 gap-4 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+					<h1 className="font-jet text-xl font-medium  text-neutral-800 dark:text-white">
+						\\links
+					</h1>
+
+					<div className="flex flex-col gap-4">
+						<a
+							href="https://www.youtube.com/watch?v=4xk_JyNoYdY"
+							className="text-blue-400 underline italic"
+						>
+							Website Link
+						</a>
 					</div>
 				</div>
 			</div>

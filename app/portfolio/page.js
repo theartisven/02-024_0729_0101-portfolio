@@ -5,7 +5,7 @@ import { FaBrain } from "react-icons/fa";
 import Link from "next/link";
 import { cards } from "./data";
 
-export default function CaseBMP() {
+export default function CaseStudy6() {
 	return (
 		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">

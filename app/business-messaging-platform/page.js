@@ -1,10 +1,61 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import CardIndex from "../_components/cardIndex";
+import CardPhoto from "../_components/cardPhoto";
 import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
 export default function CaseStudy2() {
+	const images = [
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_01.webp",
+			alt: "business-messaging-platform_01.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_02.webp",
+			alt: "business-messaging-platform_02.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_03.webp",
+			alt: "business-messaging-platform_03.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_04.webp",
+			alt: "business-messaging-platform_04.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_05.webp",
+			alt: "business-messaging-platform_05.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_06.webp",
+			alt: "business-messaging-platform_06.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_07.webp",
+			alt: "business-messaging-platform_07.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_08.webp",
+			alt: "business-messaging-platform_08.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_09.webp",
+			alt: "business-messaging-platform_09.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_10.webp",
+			alt: "business-messaging-platform_10.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_11.webp",
+			alt: "business-messaging-platform_11.webp",
+		},
+		{
+			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_12.webp",
+			alt: "business-messaging-platform_12.webp",
+		},
+	];
 	return (
 		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
@@ -29,15 +80,7 @@ export default function CaseStudy2() {
 						<CardIndex key={index} {...card} length={cards.length} i={index} />
 					);
 				})}
-				<div
-					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
-				>
-					<div className="flex flex-row justify-between">
-						<h1 className="font-jet text-3xl font-medium  text-neutral-800 dark:text-white">
-							//photos
-						</h1>
-					</div>
-				</div>
+				<CardPhoto images={images} />
 			</div>
 		</div>
 	);

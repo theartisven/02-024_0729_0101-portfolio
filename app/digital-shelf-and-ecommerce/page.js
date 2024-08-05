@@ -1,10 +1,93 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import CardIndex from "../_components/cardIndex";
+import CardPhoto from "../_components/cardPhoto";
 import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
-export default function CaseBMP() {
+export default function CaseStudy1() {
+	const images = [
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_01.webp",
+			alt: "digital-shelf-and-ecommerce_01.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_02.webp",
+			alt: "digital-shelf-and-ecommerce_02.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_03.webp",
+			alt: "digital-shelf-and-ecommerce_03.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_04.webp",
+			alt: "digital-shelf-and-ecommerce_04.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_05.webp",
+			alt: "digital-shelf-and-ecommerce_05.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_06.webp",
+			alt: "digital-shelf-and-ecommerce_06.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_07.webp",
+			alt: "digital-shelf-and-ecommerce_07.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_08.webp",
+			alt: "digital-shelf-and-ecommerce_08.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_09.webp",
+			alt: "digital-shelf-and-ecommerce_09.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_10.webp",
+			alt: "digital-shelf-and-ecommerce_10.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_11.webp",
+			alt: "digital-shelf-and-ecommerce_11.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_12.webp",
+			alt: "digital-shelf-and-ecommerce_12.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_13.webp",
+			alt: "digital-shelf-and-ecommerce_13.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_14.webp",
+			alt: "digital-shelf-and-ecommerce_14.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_15.webp",
+			alt: "digital-shelf-and-ecommerce_15.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_16.webp",
+			alt: "digital-shelf-and-ecommerce_16.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_17.webp",
+			alt: "digital-shelf-and-ecommerce_17.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_18.webp",
+			alt: "digital-shelf-and-ecommerce_18.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_19.webp",
+			alt: "digital-shelf-and-ecommerce_19.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_20.webp",
+			alt: "digital-shelf-and-ecommerce_20.webp",
+		},
+	];
 	return (
 		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll ">
 			<div className="flex flex-row justify-between">
@@ -29,13 +112,30 @@ export default function CaseBMP() {
 						<CardIndex key={index} {...card} length={cards.length} i={index} />
 					);
 				})}
-				<div
-					className="flex flex-col p-14 gap-7 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
-				>
-					<div className="flex flex-row justify-between">
-						<h1 className="font-jet text-3xl font-medium  text-neutral-800 dark:text-white">
-							//photos
-						</h1>
+
+				<CardPhoto images={images} />
+
+				<div className="flex flex-col p-6 gap-4 bg-white rounded-xl min-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+					<h1 className="font-jet text-xl font-medium  text-neutral-800 dark:text-white">
+						\\links
+					</h1>
+
+					<div className="flex flex-col gap-4">
+						<a
+							href="https://www.youtube.com/watch?v=4xk_JyNoYdY"
+							className="text-blue-400 underline italic"
+						>
+							Youtube Link
+						</a>
+						<iframe
+							height="315"
+							src="https://www.youtube.com/embed/4xk_JyNoYdY?si=smspL17hY7xFv6Y6"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						></iframe>
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import "../globals.css";
 export default function CardIndex({
 	i = 0,
@@ -6,16 +5,14 @@ export default function CardIndex({
 	number = 1,
 	description = "Default Description",
 	length = 5,
-	colorBG = "bg-blue-500", // Example default color
+	colorBG = "bg-blue-500",
 	colorOutline = "outline-blue-500",
 }) {
 	return (
-		<div
-			className="flex flex-col p-14 gap-7 bg-white rounded-xl max-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none" // Ensure
-		>
+		<div className="flex flex-col p-6 gap-4 bg-white rounded-xl max-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
 			<div className="flex flex-row justify-between">
 				<h1 className="font-jet text-xl font-medium text-neutral-800  dark:text-white">
-					//{title}
+					\\{title}
 				</h1>
 				<div className="text-base text-neutral-400 dark:text-white">
 					# {number}
