@@ -10,7 +10,7 @@ export default function VideoWithModal(props) {
 	/* 	const closeModal = () => setIsModalOpen(false); */
 
 	return (
-		<div className="relative inline-block rounded-sm overflow-hidden">
+		<div className="relative inline-block  overflow-hidden">
 			<video
 				src={props.src}
 				className="cursor-pointer max-w-full h-auto"
