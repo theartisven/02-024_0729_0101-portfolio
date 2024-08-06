@@ -18,7 +18,7 @@ export default function CardCase(props) {
 		>
 			<Link
 				href={props.href}
-				className="cardcase w-full h-full bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900"
+				className="cardcase w-full h-full bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-4"
 			>
 				<div className="flex flex-row justify-between items-center w-full">
 					<div
