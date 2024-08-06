@@ -6,7 +6,7 @@ import Linkies from "./Linkies";
 
 export default function Navbar() {
 	return (
-		<nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] rounded-md overflow-hidden">
+		<nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] sm:rounded-md overflow-hidden w-full lg:max-w-[1000px] xl:max-w-[1200px] ">
 			<Link href={"/"}>
 				{/* 				<Image
 					src={Logo}
