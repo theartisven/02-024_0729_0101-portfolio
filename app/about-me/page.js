@@ -134,7 +134,7 @@ export default function AboutMe() {
 		{ name: "Da Vinci Resolve", icon: <SiDavinciresolve />, status: "Standby" },
 	];
 	return (
-		<div className="content bg-neutral-100 dark:bg-neutral-800  min-h-[748px] max-h-[77.77%] p-4 gap-4 flex flex-col overflow-y-scroll rounded-md overflow-hidden">
+		<div className="content bg-neutral-100 w-full dark:bg-neutral-800 p-4 gap-4 flex flex-col overflow-y-scroll rounded-md lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center">
 			<div className="flex flex-col gap-4 items-center justify-center h-100vh ">
 				<div className="flex flex-col p-4 gap-4 bg-white dark:bg-neutral-900 rounded-xl w-[56rem] outline outline-1 outline-neutral-200 dark:outline-black">
 					<div className="flex flex-row justify-between">

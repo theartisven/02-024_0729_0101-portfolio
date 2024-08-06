@@ -12,12 +12,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+/*
 nav,
 .content,
 footer {
 	width: 1200px;
-}
+}*/
 nav,
 .content {
 	padding: 1rem;

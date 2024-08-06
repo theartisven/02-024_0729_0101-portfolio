@@ -9,7 +9,7 @@ export default function CardIndex({
 	colorOutline = "outline-blue-500",
 }) {
 	return (
-		<div className="flex flex-col p-6 gap-4 bg-white rounded-xl max-w-4xl min-w-[56rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+		<div className="flex flex-col p-6 gap-4 bg-white rounded-xl w-[90vw] lg:w-[54rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
 			<div className="flex flex-row justify-between">
 				<h1 className="font-jet text-xl font-medium text-neutral-800  dark:text-white">
 					\\{title}

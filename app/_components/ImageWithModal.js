@@ -29,7 +29,7 @@ export default function ImageWithModal(props) {
 						<img
 							src={props.src}
 							alt={props.alt}
-							className="max-w-full max-h-[75vh] object-contain rounded-md overflow-hidden"
+							className="max-w-full max-h-[75vh] ld:max-w-[75vw] object-contain rounded-md overflow-hidden"
 						/>
 						<button
 							className="absolute -top-8 -right-4 text-2xl font-bold text-white"
