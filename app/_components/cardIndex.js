@@ -19,7 +19,7 @@ export default function CardIndex({
 				</div>
 			</div>
 
-			<div className="font-jet text-l text-neutral-500 leading-[150%] tracking-wide max-h-[412px] max-w-[84ch] dark:text-white whitespace-pre-line">
+			<div className="font-jet text-xs md:text-l text-neutral-500 leading-[150%] tracking-wide max-h-[412px] max-w-[84ch] dark:text-white whitespace-pre-line">
 				{description}
 			</div>
 
