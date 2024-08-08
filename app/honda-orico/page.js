@@ -9,28 +9,48 @@ import { cards } from "./data";
 export default function CaseStudy5() {
 	const images = [
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_1.webp",
-			alt: "honda-orico_1.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_01.webp",
+			alt: "honda-orico_01.webp",
 		},
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_2.webp",
-			alt: "honda-orico_2.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_02.webp",
+			alt: "honda-orico_02.webp",
 		},
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_3.webp",
-			alt: "honda-orico_3.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_03.webp",
+			alt: "honda-orico_03.webp",
 		},
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_4.webp",
-			alt: "honda-orico_4.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_04.webp",
+			alt: "honda-orico_04.webp",
 		},
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_5.webp",
-			alt: "honda-orico_5.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_05.webp",
+			alt: "honda-orico_05.webp",
 		},
 		{
-			src: "../img/case_studies/honda-orico/honda-orico_6.webp",
-			alt: "honda-orico_6.webp",
+			src: "../img/case_studies/honda-orico/honda-orico_06.webp",
+			alt: "honda-orico_06.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_07.webp",
+			alt: "honda-orico_07.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_08.webp",
+			alt: "honda-orico_08.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_09.webp",
+			alt: "honda-orico_09.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_10.webp",
+			alt: "honda-orico_10.webp",
+		},
+		{
+			src: "../img/case_studies/honda-orico/honda-orico_11.webp",
+			alt: "honda-orico_11.webp",
 		},
 	];
 

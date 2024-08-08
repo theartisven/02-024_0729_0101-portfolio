@@ -87,6 +87,18 @@ export default function CaseStudy1() {
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_20.webp",
 			alt: "digital-shelf-and-ecommerce_20.webp",
 		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_21.webp",
+			alt: "digital-shelf-and-ecommerce_21.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_22.webp",
+			alt: "digital-shelf-and-ecommerce_22.webp",
+		},
+		{
+			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_23.webp",
+			alt: "digital-shelf-and-ecommerce_23.webp",
+		},
 	];
 	return (
 		<div className="content bg-neutral-100 w-full dark:bg-neutral-800 p-4 gap-4 flex flex-col overflow-y-scroll rounded-md lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center overflow-x-hidden overflow-y-scroll">

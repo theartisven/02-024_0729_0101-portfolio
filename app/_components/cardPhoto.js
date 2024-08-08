@@ -6,9 +6,7 @@ import VideoWithModal from "../_components/VideoWithModal";
 export default function CardPhoto({ images }) {
 	// Determine the number of columns based on the number of images
 	const columnClass =
-		images.length > 3
-			? "md:columns-3"
-			: "md:flex md:flex-row";
+		images.length > 3 ? "md:columns-3" : "md:flex md:flex-row";
 
 	return (
 		<div className="flex flex-col p-6 gap-4 bg-white rounded-xl w-[90vw] lg:w-[54rem]  outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">

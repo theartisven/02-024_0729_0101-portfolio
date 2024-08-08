@@ -73,7 +73,7 @@ export const caseStudies = [
 		colorBG: "bg-orange-500",
 		colorFont: "text-orange-500",
 		// eslint-disable-next-line react/jsx-key
-		icon: [<FaFigma />, <RiNextjsFill />],
+		icon: [<FaFigma />, <RiNextjsFill />, <TbBrandFramerMotion />],
 		href: "/portfolio",
 		status: "active",
 	},
