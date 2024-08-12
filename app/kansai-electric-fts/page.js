@@ -5,23 +5,29 @@ import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Kansai Electric FTS",
+};
+
 export default function CaseStudy4() {
 	const images = [
 		{
 			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_1.webp",
-			alt: "kansai-electric-fts_1.webp",
+			alt: "final version of kansai site.",
 		},
 		{
 			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_2.webp",
-			alt: "kansai-electric-fts_2.webp",
+			alt: "close up version.",
 		},
 		{
 			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_3.webp",
-			alt: "kansai-electric-fts_3.webp",
+			alt: "close up version.",
 		},
 		{
 			src: "../img/case_studies/kansai-electric-fts/kansai-electric-fts_timelapse.webm",
-			alt: "kansai-electric-fts_timelapse.webm",
+			alt: "timelapse",
 		},
 	];
 	return (

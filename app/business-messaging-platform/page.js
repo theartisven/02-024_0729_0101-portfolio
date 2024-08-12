@@ -5,55 +5,61 @@ import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for BMP",
+};
+
 export default function CaseStudy2() {
 	const images = [
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_01.webp",
-			alt: "business-messaging-platform_01.webp",
+			alt: "screen for flow builder. a node-based chatbot builder. part 1",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_02.webp",
-			alt: "business-messaging-platform_02.webp",
+			alt: "screen for flow builder. a node-based chatbot builder. part 2",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_03.webp",
-			alt: "business-messaging-platform_03.webp",
+			alt: "configuration screen for a universal chatbot.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_04.webp",
-			alt: "business-messaging-platform_04.webp",
+			alt: "setting and collection sidebar.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_05.webp",
-			alt: "business-messaging-platform_05.webp",
+			alt: "mobile version for reserver keywords.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_06.webp",
-			alt: "business-messaging-platform_06.webp",
+			alt: "audio call feature to be implemented.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_07.webp",
-			alt: "business-messaging-platform_07.webp",
+			alt: "screens for document analyzing ai. part 1",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_08.webp",
-			alt: "business-messaging-platform_08.webp",
+			alt: "screens for document analyzing ai. part 2",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_09.webp",
-			alt: "business-messaging-platform_09.webp",
+			alt: "screens for document analyzing ai. part 3",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_10.webp",
-			alt: "business-messaging-platform_10.webp",
+			alt: "screens for whatsapp flow builder.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_11.webp",
-			alt: "business-messaging-platform_11.webp",
+			alt: "screens for whatsapp flow builder and metrics data sources.",
 		},
 		{
 			src: "../img/case_studies/business-messaging-platform/business-messaging-platform_12.webp",
-			alt: "business-messaging-platform_12.webp",
+			alt: "metrics data sources.",
 		},
 	];
 	return (

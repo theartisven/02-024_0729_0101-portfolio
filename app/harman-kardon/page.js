@@ -6,15 +6,21 @@ import { IoIosDocument } from "react-icons/io";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Harman Kardon",
+};
+
 export default function CaseStudy7() {
 	const images = [
 		{
 			src: "../img/case_studies/harman-kardon/harman-kardon_1.webp",
-			alt: "harman-kardon_1.webp",
+			alt: "my proposed design for homepage, product pages, and product details.",
 		},
 		{
 			src: "../img/case_studies/harman-kardon/harman-kardon_2.webp",
-			alt: "harman-kardon_2.webp",
+			alt: "prototype view",
 		},
 	];
 

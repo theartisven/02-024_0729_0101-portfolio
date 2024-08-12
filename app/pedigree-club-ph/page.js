@@ -6,11 +6,17 @@ import { IoIosDocument } from "react-icons/io";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Pedigree Club Ph",
+};
+
 export default function CaseStudy8() {
 	const images = [
 		{
 			src: "../img/case_studies/pedigree-club-ph/pedigress-club-ph_1.webp",
-			alt: "pedigress-club-ph_1.webp",
+			alt: "my proposed version of the redesign.",
 		},
 	];
 	return (

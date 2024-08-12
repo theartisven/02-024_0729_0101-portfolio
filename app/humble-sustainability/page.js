@@ -5,15 +5,21 @@ import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Humble Sustainability",
+};
+
 export default function CaseStudy3() {
 	const images = [
 		{
 			src: "../img/case_studies/humble-sustainability/humble-sustainability_1.webp",
-			alt: "humble-sustainability_1.webp",
+			alt: "screenshot of mobile and desktop version for humble site.",
 		},
 		{
 			src: "../img/case_studies/humble-sustainability/humble-sustainability_2.webp",
-			alt: "humble-sustainability_2.webp",
+			alt: "screenshot of screen flow mobile and desktop version.",
 		},
 	];
 	return (

@@ -5,99 +5,105 @@ import { RiArrowLeftSLine, RiCheckFill } from "react-icons/ri";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Digital shelf and Ecommerce",
+};
+
 export default function CaseStudy1() {
 	const images = [
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_01.webp",
-			alt: "digital-shelf-and-ecommerce_01.webp",
+			alt: "digital shelf - slight modification for search terms screen.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_02.webp",
-			alt: "digital-shelf-and-ecommerce_02.webp",
+			alt: "digital shelf - market share screen for brands and products.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_03.webp",
-			alt: "digital-shelf-and-ecommerce_03.webp",
+			alt: "digital shelf - new edits for market screen after user feedback.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_04.webp",
-			alt: "digital-shelf-and-ecommerce_04.webp",
+			alt: "digital shelf - screens for voucher performances in time-based.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_05.webp",
-			alt: "digital-shelf-and-ecommerce_05.webp",
+			alt: "digital shelf - email alerts with trigger and condition.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_06.webp",
-			alt: "digital-shelf-and-ecommerce_06.webp",
+			alt: "digital shelf - screens sample for FAQ",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_07.webp",
-			alt: "digital-shelf-and-ecommerce_07.webp",
+			alt: "digital shelf - full view for homepage. part 1",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_08.webp",
-			alt: "digital-shelf-and-ecommerce_08.webp",
+			alt: "digital shelf - full view for homepage. part 2.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_09.webp",
-			alt: "digital-shelf-and-ecommerce_09.webp",
+			alt: "digital ecommerce - all screens created from scratch.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_10.webp",
-			alt: "digital-shelf-and-ecommerce_10.webp",
+			alt: "digital ecommerce - screens for sale overview and first subsection for sales section.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_11.webp",
-			alt: "digital-shelf-and-ecommerce_11.webp",
+			alt: "digital ecommerce - screens for first 2 subsections.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_12.webp",
-			alt: "digital-shelf-and-ecommerce_12.webp",
+			alt: "digital ecommerce - last 2 subsections. and finance section.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_13.webp",
-			alt: "digital-shelf-and-ecommerce_13.webp",
+			alt: "digital ecommerce - 7 subsections for customer chat like customer service and distribution.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_14.webp",
-			alt: "digital-shelf-and-ecommerce_14.webp",
+			alt: "digital ecommerce - additional screens.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_15.webp",
-			alt: "digital-shelf-and-ecommerce_15.webp",
+			alt: "digital ecommerce - mockup screens for integration",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_16.webp",
-			alt: "digital-shelf-and-ecommerce_16.webp",
+			alt: "digital ecommerce - screens for supply chain sections. part 1",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_17.webp",
-			alt: "digital-shelf-and-ecommerce_17.webp",
+			alt: "digital ecommerce - screens for supply chain sections. part 2",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_18.webp",
-			alt: "digital-shelf-and-ecommerce_18.webp",
+			alt: "digital ecommerce - screens for supply chain sections. part 3",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_19.webp",
-			alt: "digital-shelf-and-ecommerce_19.webp",
+			alt: "digital ecommerce - mockup for power bi version for temp use. part 1",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_20.webp",
-			alt: "digital-shelf-and-ecommerce_20.webp",
+			alt: "digital ecommerce - mockup for power bi version for temp use. part 2",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_21.webp",
-			alt: "digital-shelf-and-ecommerce_21.webp",
+			alt: "competitive analysis first draft.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_22.webp",
-			alt: "digital-shelf-and-ecommerce_22.webp",
+			alt: "competitive analysis second draft.",
 		},
 		{
 			src: "../img/case_studies/digital-shelf-and-ecommerce/digital-shelf-and-ecommerce_23.webp",
-			alt: "digital-shelf-and-ecommerce_23.webp",
+			alt: "competitive analysis final version.",
 		},
 	];
 	return (

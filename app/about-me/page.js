@@ -17,6 +17,12 @@ import { HiCube } from "react-icons/hi2";
 import Protopie from "../../public/svg/Protopie.svg";
 import Axure from "../../public/svg/Axure.svg";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Sven Hero Kaufmann's About Me",
+};
+
 export default function AboutMe() {
 	const sectionExperiences = [
 		{

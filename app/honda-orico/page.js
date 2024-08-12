@@ -6,51 +6,57 @@ import { IoHourglassSharp } from "react-icons/io5";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for Honda Orico",
+};
+
 export default function CaseStudy5() {
 	const images = [
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_01.webp",
-			alt: "honda-orico_01.webp",
+			alt: "overall view for the project.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_02.webp",
-			alt: "honda-orico_02.webp",
+			alt: "all mobile wireframe for the client . This is the latest version.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_03.webp",
-			alt: "honda-orico_03.webp",
+			alt: "design mockup for the client side. I only adjust things for 1 and 2.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_04.webp",
-			alt: "honda-orico_04.webp",
+			alt: "desktop version for the client side.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_05.webp",
-			alt: "honda-orico_05.webp",
+			alt: "all mobile wireframe for the dealer. This is the version have not discussed yet.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_06.webp",
-			alt: "honda-orico_06.webp",
+			alt: "design propose for dealer.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_07.webp",
-			alt: "honda-orico_07.webp",
+			alt: "simplified version for client user flow.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_08.webp",
-			alt: "honda-orico_08.webp",
+			alt: "simplified version for dealer user flow.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_09.webp",
-			alt: "honda-orico_09.webp",
+			alt: "detailed version for client.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_10.webp",
-			alt: "honda-orico_10.webp",
+			alt: "detailed version for dealer.",
 		},
 		{
 			src: "../img/case_studies/honda-orico/honda-orico_11.webp",
-			alt: "honda-orico_11.webp",
+			alt: "detailed version for admin.",
 		},
 	];
 

@@ -6,27 +6,33 @@ import { IoIosDocument } from "react-icons/io";
 import Link from "next/link";
 import { cards } from "./data";
 
+export const runtime = "edge";
+
+export const metadata = {
+	title: "Case Study for CPU App",
+};
+
 export default function CaseStudy9() {
 	const images = [
 		{
 			src: "../img/case_studies/cpu-app/cpu-app_1.webp",
-			alt: "cpu-app_1.webp",
+			alt: "original versions of the cpu mobile site.",
 		},
 		{
 			src: "../img/case_studies/cpu-app/cpu-app_2.webp",
-			alt: "cpu-app_2.webp",
+			alt: "redesign version with better ui.",
 		},
 		{
 			src: "../img/case_studies/cpu-app/cpu-app_3.webp",
-			alt: "cpu-app_3.webp",
+			alt: "wireframe of from scratch version.",
 		},
 		{
 			src: "../img/case_studies/cpu-app/cpu-app_4.webp",
-			alt: "cpu-app_4.webp",
+			alt: "high-fidelity screens with additional screens add after user inteviews.",
 		},
 		{
 			src: "../img/case_studies/cpu-app/cpu-app_5.webp",
-			alt: "cpu-app_5.webp",
+			alt: "instagram mockup.",
 		},
 	];
 	return (
