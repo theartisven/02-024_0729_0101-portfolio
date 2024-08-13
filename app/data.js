@@ -64,7 +64,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/honda-orico",
-		status: "active",
+		status: "deactive",
 	},
 
 	{
