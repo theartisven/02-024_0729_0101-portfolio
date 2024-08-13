@@ -28,7 +28,7 @@ export default function AboutMe() {
 		{
 			title: "UI / UX Designer",
 			company: "ADA Asia",
-			date: "2022.06 - Current",
+			date: "2022.06",
 			isCurrent: true,
 		},
 		{

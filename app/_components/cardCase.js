@@ -18,7 +18,7 @@ export default function CardCase(props) {
 		>
 			<Link
 				href={props.href}
-				className="cardcase w-full h-full bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-1"
+				className="cardcase w-full h-full bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-1.5 2xl:gap-2"
 			>
 				<div className="flex flex-row justify-between items-center w-full">
 					<div
@@ -37,7 +37,7 @@ export default function CardCase(props) {
 					<h1 className="text-base text-neutral-800 font-medium font-jet dark:text-white md:text-xl">
 						{props.title}
 					</h1>
-					<h2 className="text-xs text-neutral-400 font-jet text-ellipsis tracking-[170%] leading-6 overflow-hidden line-clamp-3 text-pretty dark:text-white xl:line-clamp-3">
+					<h2 className="text-xs text-neutral-400 font-jet text-ellipsis overflow-hidden line-clamp-2 text-pretty dark:text-white xl:line-clamp-3">
 						{props.description}
 					</h2>
 				</div>

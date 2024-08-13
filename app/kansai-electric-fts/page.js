@@ -56,6 +56,21 @@ export default function CaseStudy4() {
 				})}
 
 				<CardPhoto images={images} />
+				<div className="flex flex-col p-6 gap-4 bg-white rounded-xl w-[90vw] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none lg:w-[45rem]  ">
+					<h1 className="font-jet text-xl font-medium  text-neutral-800 dark:text-white">
+						\\links
+					</h1>
+
+					<div className="flex flex-col gap-4">
+						<a
+							href="https://www.kefts.com.sg/"
+							className="text-blue-400 underline italic"
+						>
+							Website
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	);

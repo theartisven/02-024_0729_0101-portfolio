@@ -19,12 +19,13 @@ export default function Navbar() {
 					width="44px"
 					height="44px"
 					alt="Sven Hero Kaufmann's Personal Logo"
+					className="hover:rotate-[120deg] transition-all duration-1000"
 				/>
 			</Link>
 
 			<div className="flex gap-4	 flex-row">
 				<Linkies name="curated" href="/" />
-				<div className="text-violet-500 font-medium">\\</div>
+				<div className="text-violet-500 font-medium px-1 py-2">\\</div>
 				{/* <Linkies name="exploration" href="/exploration" />
 				<div className="text-violet-500 font-medium">\\</div>
 				<Linkies name="learning" href="/learning" />

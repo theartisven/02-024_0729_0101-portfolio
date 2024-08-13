@@ -133,7 +133,7 @@ export default function CaseStudy1() {
 
 				<CardPhoto images={images} />
 
-				<div className="flex flex-col p-6 gap-4 bg-white rounded-xl w-[90vw] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none lg:w-[54rem]  ">
+				<div className="flex flex-col p-6 gap-4 bg-white rounded-xl w-[90vw] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none lg:w-[45rem]  ">
 					<h1 className="font-jet text-xl font-medium  text-neutral-800 dark:text-white">
 						\\links
 					</h1>
@@ -147,7 +147,7 @@ export default function CaseStudy1() {
 						</a>
 						<iframe
 							width="100%"
-							height="auto"
+							height="300px"
 							src="https://www.youtube.com/embed/4xk_JyNoYdY?si=smspL17hY7xFv6Y6"
 							title="YouTube video player"
 							frameborder="0"
