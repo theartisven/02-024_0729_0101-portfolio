@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+* {
+	font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
+		"Segoe UI Emoji", "Segoe UI Symbol";
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*
+nav,
+.content,
+footer {
+	width: 1200px;
+}*/
+nav,
+.content {
+	padding: 1rem;
+}
+
+.content {
+	position: relative;
+	--delay-increment: 150ms;
+}
+
+.content > .cardcase:hover {
+	transform: translateY(-5px);
+	transition: all 400ms ease-in-out;
+}
+
+.font-jet {
+	font-family: "JetBrains Mono", monospace !important;
+}
+/* Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 8px; /* Width of the scrollbar */
+	height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1; /* Light gray background for the scrollbar track */
+	border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888; /* Darker gray for the draggable part of the scrollbar */
+	border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a7a7a7; /* Darker gray when the scrollbar is hovered */
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin; /* Make the scrollbar thinner */
+	scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar and track */
+	scroll-snap-type: proximity;
+}
+
+/* nav {
+	height: 72px;
+}
+
+.content {
+	height: 750px;
+}
+footer {
+	height: 24px;
+}
+ */

@@ -1,0 +1,39 @@
+import "../globals.css";
+import Image from "next/image";
+import Link from "next/link";
+import Linkies from "./Linkies";
+/* import Logo from "../../public/img/asset/logo.png"; */
+
+export default function Navbar() {
+	return (
+		<nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[1000px] xl:max-w-[1200px] ">
+			<Link href={"/"}>
+				{/* 				<Image
+					src={Logo}
+					width={44}
+					height={44}
+					alt="Sven Hero Kaufmann's Personal Logo"
+				/> */}
+				<img
+					src="../img/asset/logo.png"
+					width="44px"
+					height="44px"
+					alt="Sven Hero Kaufmann's Personal Logo"
+					className="hover:rotate-[120deg] transition-all duration-1000"
+				/>
+			</Link>
+
+			<div className="flex gap-4	 flex-row">
+				<Linkies name="curated" href="/" />
+				<div className="text-violet-500 font-medium px-1 py-2">\\</div>
+				{/* <Linkies name="exploration" href="/exploration" />
+				<div className="text-violet-500 font-medium">\\</div>
+				<Linkies name="learning" href="/learning" />
+				<div className="text-neutral-200 font-medium">/</div>
+				<Linkies name="other-stuff" href="/other-stuff" />
+				<div className="text-violet-500 font-medium">\\</div> */}
+				<Linkies name="about-me	" href="/about-me" />
+			</div>
+		</nav>
+	);
+}
