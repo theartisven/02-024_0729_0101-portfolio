@@ -1,39 +1,79 @@
+"use client"; // Ensure this component is treated as a client component
 import "../globals.css";
-import Image from "next/image";
 import Link from "next/link";
 import Linkies from "./Linkies";
-/* import Logo from "../../public/img/asset/logo.png"; */
+import { useState } from "react";
+import { RiCloseFill, RiMenuLine } from "react-icons/ri";
 
 export default function Navbar() {
-	return (
-		<nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[1000px] xl:max-w-[1200px] ">
-			<Link href={"/"}>
-				{/* 				<Image
-					src={Logo}
-					width={44}
-					height={44}
-					alt="Sven Hero Kaufmann's Personal Logo"
-				/> */}
-				<img
-					src="../img/asset/logo.png"
-					width="44px"
-					height="44px"
-					alt="Sven Hero Kaufmann's Personal Logo"
-					className="hover:rotate-[120deg] transition-all duration-1000"
-				/>
-			</Link>
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage menu visibility
 
-			<div className="flex gap-4	 flex-row">
-				<Linkies name="curated" href="/" />
-				<div className="text-violet-500 font-medium px-1 py-2">\\</div>
-				{/* <Linkies name="exploration" href="/exploration" />
-				<div className="text-violet-500 font-medium">\\</div>
-				<Linkies name="learning" href="/learning" />
-				<div className="text-neutral-200 font-medium">/</div>
-				<Linkies name="other-stuff" href="/other-stuff" />
-				<div className="text-violet-500 font-medium">\\</div> */}
-				<Linkies name="about-me	" href="/about-me" />
-			</div>
-		</nav>
-	);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle menu open/close state
+  };
+
+  return (
+    <nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[1000px] xl:max-w-[1200px] relative">
+      <Link href="/">
+        <img
+          src="../img/asset/logo.png"
+          width="44"
+          height="44"
+          alt="Sven Hero Kaufmann's Personal Logo"
+          className="hover:rotate-[120deg] transition-all duration-1000 origin-center"
+        />
+      </Link>
+
+      {/* Hamburger Icon */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} aria-label="Toggle menu">
+          {isMenuOpen ? (
+            <RiCloseFill size={30} className="text-violet-500" />
+          ) : (
+            <RiMenuLine size={30} className="text-violet-500" />
+          )}
+        </button>
+      </div>
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex gap-4 flex-row">
+        <Linkies name="curated" href="/" />
+        <div className="text-violet-500 font-medium px-1 py-2">\\</div>
+        {/*         <Linkies name="exploration" href="/exploration" />
+        <div className="text-violet-500 font-medium">\\</div>
+        <Linkies name="learning" href="/learning" />
+        <div className="text-neutral-200 font-medium">/</div>
+        <Linkies name="other-stuff" href="/other-stuff" />
+        <div className="text-violet-500 font-medium">\\</div> */}
+        <Linkies name="about-me" href="/about-me" />
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="fixed inset-0 bg-neutral-900 bg-opacity-99  z-50 flex flex-col items-center justify-center md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="absolute top-5 right-5 text-violet-500 font-medium px-1 py-2"
+          >
+            <RiCloseFill size={30} />
+          </button>
+          <Link href="/">
+            <img
+              src="../img/asset/logo.png"
+              width="88"
+              height="88"
+              alt="Sven Hero Kaufmann's Personal Logo"
+              className="pb-8"
+            />
+          </Link>
+
+          <Linkies name="curated" href="/" />
+          {/*        <Linkies name="exploration" href="/exploration" />
+          <Linkies name="learning" href="/learning" />
+          <Linkies name="other-stuff" href="/other-stuff" /> */}
+          <Linkies name="about-me" href="/about-me" />
+        </div>
+      )}
+    </nav>
+  );
 }
