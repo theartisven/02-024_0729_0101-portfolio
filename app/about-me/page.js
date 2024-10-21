@@ -26,9 +26,9 @@ export const metadata = {
 export default function AboutMe() {
   const sectionExperiences = [
     {
-      title: "UI  UX Designer",
+      title: "UI \\ UX Designer",
       company: "ADA Asia",
-      date: "2022.06",
+      date: "2022.06 - current",
       isCurrent: true,
     },
     {
@@ -37,7 +37,7 @@ export default function AboutMe() {
       date: "2021.10 - 2022.01",
     },
     {
-      title: "UI  UX Intern",
+      title: "UI \\ UX Intern",
       company: "Humble Sustainability",
       date: "2020.07 - 2020.10",
     },

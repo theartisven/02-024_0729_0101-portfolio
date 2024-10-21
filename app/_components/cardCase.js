@@ -63,13 +63,13 @@ export default function CardCase(props) {
         duration: 0.5,
       }}
     >
-      <Link
+      <div
         href={props.href}
-        className=" cardcase w-full h-full text-white bg-white flex flex-col items-center justify-center p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-2 2xl:gap-4"
+        className=" cardcase w-full h-full text-base text-neutral-800  dark:text-white font-medium font-jet md:text-xl bg-white flex flex-col items-center justify-center p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-2 2xl:gap-4"
       >
-        <div className={`text-xl font-medium font-jet`}>{props.title}</div>
+        <div className={``}>{props.title}</div>
         <FaLock />
-      </Link>
+      </div>
     </motion.div>
   );
 }

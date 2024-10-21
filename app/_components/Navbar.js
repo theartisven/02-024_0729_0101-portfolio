@@ -12,8 +12,12 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen); // Toggle menu open/close state
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // Close the menu
+  };
+
   return (
-    <nav className="flex flex-row justify-between items-center bg-neutral-100 dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[1000px] xl:max-w-[1200px] relative">
+    <nav className="flex flex-row justify-between items-center bg-neutral-100  dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[992px] xl:max-w-[1200px] relative">
       <Link href="/">
         <img
           src="../img/asset/logo.png"
@@ -37,27 +41,21 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-4 flex-row">
-        <Linkies name="curated" href="/" />
+        <Linkies name="curated" href="/" onClick={closeMenu} />
         <div className="text-violet-500 font-medium px-1 py-2">\\</div>
-        {/*         <Linkies name="exploration" href="/exploration" />
-        <div className="text-violet-500 font-medium">\\</div>
-        <Linkies name="learning" href="/learning" />
-        <div className="text-neutral-200 font-medium">/</div>
-        <Linkies name="other-stuff" href="/other-stuff" />
-        <div className="text-violet-500 font-medium">\\</div> */}
-        <Linkies name="about-me" href="/about-me" />
+        <Linkies name="about-me" href="/about-me" onClick={closeMenu} />
       </div>
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-neutral-900 bg-opacity-99  z-50 flex flex-col items-center justify-center md:hidden">
+        <div className="fixed inset-0 bg-neutral-900 bg-opacity-99 z-50 flex flex-col items-center justify-center md:hidden">
           <button
             onClick={toggleMenu}
             className="absolute top-5 right-5 text-violet-500 font-medium px-1 py-2"
           >
             <RiCloseFill size={30} />
           </button>
-          <Link href="/">
+          <Link href="/" onClick={closeMenu}>
             <img
               src="../img/asset/logo.png"
               width="88"
@@ -67,11 +65,8 @@ export default function Navbar() {
             />
           </Link>
 
-          <Linkies name="curated" href="/" />
-          {/*        <Linkies name="exploration" href="/exploration" />
-          <Linkies name="learning" href="/learning" />
-          <Linkies name="other-stuff" href="/other-stuff" /> */}
-          <Linkies name="about-me" href="/about-me" />
+          <Linkies name="curated" href="/" onClick={closeMenu} />
+          <Linkies name="about-me" href="/about-me" onClick={closeMenu} />
         </div>
       )}
     </nav>
