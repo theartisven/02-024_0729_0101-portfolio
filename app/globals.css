@@ -12,12 +12,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
-nav,
-.content,
-footer {
-	width: 1200px;
-}*/
+
 nav,
 .content {
   padding: 1rem;
@@ -74,3 +69,24 @@ footer {
 	height: 24px;
 }
  */
+
+.bg_dots {
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-image: radial-gradient(hsl(0, 0%, 90%) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg_dots {
+    background-color: #171717; /* Dark mode background */
+    background-image: radial-gradient(
+      hsl(0, 0%, 5%) 1px,
+      transparent 1px
+    ); /* Adjust color for dark mode */
+  }
+}
