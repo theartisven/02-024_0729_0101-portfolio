@@ -1,8 +1,7 @@
-import { FaFigma,FaCloudflare  } from "react-icons/fa6";
+import { FaFigma, FaCloudflare } from "react-icons/fa6";
 import { SiAdobexd } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
-
 
 export const caseStudies = [
 	{
@@ -64,7 +63,7 @@ export const caseStudies = [
 		// eslint-disable-next-line react/jsx-key
 		icon: [<FaFigma />],
 		href: "/honda-orico",
-		status: "deactive",
+		status: "active",
 	},
 
 	{
@@ -75,8 +74,12 @@ export const caseStudies = [
 		colorBG: "bg-orange-500",
 		colorFont: "text-orange-500",
 		// eslint-disable-next-line react/jsx-key
-		icon: [<FaFigma />, <RiNextjsFill />, <TbBrandFramerMotion />,<FaCloudflare />
-	],
+		icon: [
+			<FaFigma />,
+			<RiNextjsFill />,
+			<TbBrandFramerMotion />,
+			<FaCloudflare />,
+		],
 		href: "/portfolio",
 		status: "active",
 	},
