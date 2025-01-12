@@ -18,7 +18,7 @@ export const cards = [
   {
     title: "reflection",
     description:
-      "For now, the project is on hold. When I ask my manager for some clarification, He said the problem is on the their side.",
+      "For now, the project is on hold. When I ask my manager for some clarification, He said the conflict is on the their side.",
     colorBG: "bg-rose-500",
     colorOutline: "outline-rose-500",
     number: 3,
