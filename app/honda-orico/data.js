@@ -1,18 +1,26 @@
 export const cards = [
-	{
-		title: "intro",
-		description:
-			"Honda Orico is a platform initiated by Honda Indonesia, designed to serve as a marketplace for reselling second-hand vehicles. Its primary purpose is to facilitate the buying and selling of pre-owned Honda vehicles, providing a trusted and reliable source for customers seeking quality used cars.",
-		colorBG: "bg-rose-500",
-		colorOutline: "outline-rose-500",
-		number: 1,
-	},
-	{
-		title: "involvement",
-		description:
-			"My first action was to review the function list provided by our project lead. I am responsible for wireframing, user testing, design concepts, and creating the design specifications. The platform users include the client, dealer, and admin.Since the platform is intended to be mobile-first, I started by creating mobile wireframes for the client and dealer sides.\n\n The dealer and admin wireframes will be assigned to an external team responsible for programming the platform.Concerned about the timeline, I assigned my colleague to develop some designs for the dealer and client, while I periodically reviewed their progress.\n\n Fortunately, I had the opportunity to create about half of the designs myself and assisted with the others. We ended up with three versions for the dealer and four versions for the client.I also prototyped the wireframes and participated in design sprints while working on the client wireframes.",
-		colorBG: "bg-rose-500",
-		colorOutline: "outline-rose-500",
-		number: 2,
-	},
+  {
+    title: "intro",
+    description:
+      "Honda Orico is a platform launched by Honda Indonesia to serve as a marketplace for reselling pre-owned vehicles. Its primary goal is to facilitate the buying and selling of used Honda vehicles, offering a trusted and reliable source for customers seeking quality pre-owned cars.",
+    colorBG: "bg-rose-500",
+    colorOutline: "outline-rose-500",
+    number: 1,
+  },
+  {
+    title: "involvement",
+    description:
+      "My first step was to review the function list provided by our project lead. My responsibilities include wireframing, user testing, design concepts, and creating design specifications. The platform users encompass the client, dealer, and admin.\n\nGiven that the platform is designed to be mobile-first, I began by creating mobile wireframes for the client and dealer sides. Wireframes for the dealer and admin will be handled by an external team responsible for programming the platform.\n\nDue to concerns about the timeline, I assigned a colleague to develop designs for the dealer and client while I periodically reviewed their progress. Fortunately, I was able to create about half of the designs myself and contributed to the remaining ones. We ultimately produced three design versions for the dealer and four for the client.Additionally, I prototyped the wireframes and participated in design sprints while working on the client wireframes.",
+    colorBG: "bg-rose-500",
+    colorOutline: "outline-rose-500",
+    number: 2,
+  },
+  {
+    title: "reflection",
+    description:
+      "For now, the project is on hold. When I ask my manager for some clarification, He said the conflict is on the their side.",
+    colorBG: "bg-rose-500",
+    colorOutline: "outline-rose-500",
+    number: 3,
+  },
 ];

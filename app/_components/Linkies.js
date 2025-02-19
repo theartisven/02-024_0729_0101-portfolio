@@ -8,14 +8,16 @@ export default function Linkies(props) {
 	const isActive = pathname === props.href;
 
 	return (
-		<div
+		<Link
+			href={props.href}
+			onClick={props.onClick}
 			className={
 				isActive
-					? "text-purple-700 font-medium dark:text-purple-700"
-					: "text-neutral-500 dark:text-neutral-500 hover:text-purple-700"
+					? "text-purple-500 font-medium dark:text-purple-500 px-1 py-2 transition-all duration-200"
+					: "text-neutral-500 dark:text-neutral-200 hover:text-purple-500 px-1 py-2 transition-all duration-200 "
 			}
 		>
-			<Link href={props.href}>{props.name}</Link>
-		</div>
+			{props.name}
+		</Link>
 	);
 }
