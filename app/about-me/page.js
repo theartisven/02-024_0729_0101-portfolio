@@ -144,7 +144,7 @@ export default function AboutMe() {
                 {sectionExperiences.map((experience, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-200 dark:outline-black shadow-sm flex flex-col gap-2 relative"
+                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col gap-2 relative"
                   >
                     <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium">
                       {experience.title}
@@ -174,7 +174,7 @@ export default function AboutMe() {
                 {sectionCertificate.map((course, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-200 dark:outline-black shadow-sm flex flex-col gap-2 relative"
+                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col gap-2 relative"
                   >
                     <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
                       {course.title}
@@ -205,7 +205,7 @@ export default function AboutMe() {
                 {sectionLanguage.map((language, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-200 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 xlitems-center justify-between"
+                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 xlitems-center justify-between"
                   >
                     <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
                       {language.name}
@@ -227,7 +227,7 @@ export default function AboutMe() {
                 {sectionSoftware.map((tool, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-200 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
+                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
                   >
                     <div className="flex flex-row gap-2 items-center ">
                       <div className="text-neutral-500 dark:text-white">
@@ -254,7 +254,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
               \\things im learning
@@ -262,7 +262,7 @@ export default function AboutMe() {
                 {sectionLearning.map((tool, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-200 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
+                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
                   >
                     <div className="flex flex-row gap-2 items-center">
                       <div className="text-neutral-500 dark:text-white">
