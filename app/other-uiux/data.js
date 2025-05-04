@@ -31,7 +31,7 @@ export const caseStudies = [
     title: "Pedigree Club PH",
     description:
       "Designed a branded microsite for Pedigree Philippines aimed at increasing engagement among dog owners.The UX focused on easy onboarding and redeemable loyalty features to build community and promote healthy habits.",
-    tags: ["Curated (02/03)", "UI & UX (10/11)"],
+    tags: ["Other UI / UX  (02/03)", "UI & UX (10/11)"],
     leftIcon: [<HiCursorClick key="licon" />],
     rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-yellow-500",
@@ -44,7 +44,7 @@ export const caseStudies = [
     title: "Add2Cart",
     description:
       "Created a quick prototype for a startup Add2Cart. Delivered interaction flows and UI design optimized for conversion during campaign periods for mobile version.",
-    tags: ["Curated (03/03)", "UI & UX (11/11)"],
+    tags: ["Other UI / UX  (03/03)", "UI & UX (11/11)"],
     leftIcon: [<HiCursorClick key="licon" />],
     rightIcon: [<FaMobileButton key="ricon" />],
     colorBG: "bg-green-500",
