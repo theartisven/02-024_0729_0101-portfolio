@@ -13,7 +13,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/svenherokaufmann"
             className="hover:text-purple-500"
           >
-            <FaLinkedin />{" "}
+            <FaLinkedin />
           </Link>
         </div>
         <div>Sven Hero Kaufmann</div>

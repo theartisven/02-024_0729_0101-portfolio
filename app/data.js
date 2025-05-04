@@ -1,41 +1,54 @@
-import { FaFigma, FaCloudflare } from "react-icons/fa6";
+import { FaChartLine, FaCloudflare } from "react-icons/fa";
+
+import { FaMobileButton } from "react-icons/fa6";
+
+import { CgFigma } from "react-icons/cg";
+
+import { IoDesktop, IoLogoVercel } from "react-icons/io5";
+
+import { RiHeart3Fill, RiNextjsFill } from "react-icons/ri";
+
 import { SiAdobexd } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+
 import { TbBrandFramerMotion } from "react-icons/tb";
 
+import { HiCursorClick } from "react-icons/hi";
 export const caseStudies = [
   {
-    title: "Digital Shelf and Ecommerce",
+    title: "Digital Shelf & E-commerce",
     description:
-      "This project focuses primarily on developing internal tools tailored for an ecommerce platform, predominantly targeting Shopee and Lazada. These platforms, while similar, differ in their data sources, distinguishing them as two distinct but related projects within the scope.",
-    date: "2021.09.10 - 2022.10.13",
+      "Designed internal tools for managing product visibility and performance on Shopee and Lazada. Focused on harmonizing data pipelines with distinct technical ecosystems.",
+    tags: ["Curated (01/08)", "UI & UX (01/11)"],
+    leftIcon: [<FaChartLine key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
+    icon: [<CgFigma key="icon" />],
     href: "/digital-shelf-and-ecommerce",
     status: "active",
   },
   {
     title: "Business Messaging Platform",
     description:
-      "This project is created to manage customer interaction via social platform like WhatsApp and Line. This tools created manage interactions by 2 part: 1 is traditional customer dashboard, 2 is create a node based chatbot, and last is use the LLM to analyze manual and book.",
-    date: "2023.11.09 - 2024.03.26",
+      "Created a multi-channel messaging system integrating WhatsApp and Line. Developed two core UX flows: an agent-facing dashboard and a visual chatbot builder.",
+    tags: ["Curated (02/08)", "UI & UX (02/11)"],
+    leftIcon: [<FaChartLine key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
+    icon: [<CgFigma key="icon" />],
     href: "/business-messaging-platform",
     status: "active",
   },
   {
     title: "Humble Sustainability",
     description:
-      "Humble is a startup based on circular economy helping businesses sell surplus products sustainably. They recover high-value items for sale on Thrift by Humble and work with B2B partners to recycle or resell the rest. ",
-    date: "2018.06 - 2018.10",
+      "Collaborated with a circular economy startup to design a platform for reselling surplus goods. Designed the initial mobile and desktop version.",
+    tags: ["Curated (03/08)", "UI & UX (03/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
-    // eslint-disable-next-line react/jsx-key
     icon: [<SiAdobexd key="icon" />],
     href: "/humble-sustainability",
     status: "active",
@@ -43,82 +56,70 @@ export const caseStudies = [
   {
     title: "Kansai Electric FTS",
     description:
-      "Established in 2017, Kansai Electric Power FTS (KEFTS) operates as a wholly-owned subsidiary of The Kansai Electric Power (KEPCO). Specializing in LNG trading, with bases in Singapore and London, KEFTS focuses on maximizing LNG transaction capabilities to meet the fluctuating demands of KEPCO. Over time, it has expanded its services to cater to a broader clientele, offering flexibility and value optimization beyond KEPCO's requirements ",
-    date: "2023.12.04 - 2024.02.08",
+      "Redesigned internal trading dashboards for KEFTS, an LNG subsidiary of Kansai Electric. Streamlined complex data visualizations and workflows for international energy trading across time zones.",
+    tags: ["Curated (04/08)", "UI & UX (04/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
+    icon: [<CgFigma key="icon" />],
     href: "/kansai-electric-fts",
     status: "active",
   },
-
   {
     title: "Honda Orico",
     description:
-      "Honda Orico is a platform initiated by Honda Indonesia, designed to serve as a marketplace for reselling second-hand vehicles. Its primary purpose is to facilitate the buying and selling of pre-owned Honda vehicles, providing a trusted and reliable source for customers seeking quality used cars.",
-    date: "2024.05.29 - 2024.06.27",
-    colorBG: "bg-rose-500",
-    colorFont: "text-rose-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
+      "Developed a user-friendly platform for buying and selling certified used Honda vehicles. Focused on trust, ease of navigation, and vehicle detail clarity for the Indonesian market.",
+    tags: ["Curated (05/08)", "UI & UX (05/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<FaMobileButton key="ricon" />],
+    colorBG: "bg-green-500",
+    colorFont: "text-green-500",
+    icon: [<CgFigma key="icon" />],
     href: "/honda-orico",
-    status: "active",
+    status: "inactive",
   },
-
   {
-    title: "Portfolio",
+    title: "Kawasaki India",
     description:
-      "The primary purpose of my personal website portfolio is to showcase my professional, creative, and other works, while also serving as an opportunity to improve my skills in programming, motion design, writing and etc",
-    date: "2024.01.01",
+      "Crafted responsive e-commerce wireframes for the Indian market, designed to integrate into a future digital ecosystem.",
+    tags: ["Curated (06/08)", "UI & UX (06/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
+    colorBG: "bg-green-500",
+    colorFont: "text-green-500",
+    icon: [<CgFigma key="icon" />],
+    href: "/kawasaki",
+    status: "inactive",
+  },
+  {
+    title: "Personal Portfolio",
+    description:
+      "A living portfolio project to explore design systems, motion design, and front-end development with tools like Next.js, Framer Motion, and Cloudflare. Constantly evolving with my skills.",
+    tags: ["Curated (07/08)", "UI & UX (07/11)"],
+    leftIcon: [<RiHeart3Fill key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-orange-500",
     colorFont: "text-orange-500",
-    // eslint-disable-next-line react/jsx-key
     icon: [
-      <FaFigma key="icon" />,
-      ,
+      <CgFigma key="icon" />,
       <RiNextjsFill key="icon" />,
-      ,
       <TbBrandFramerMotion key="icon" />,
-      ,
       <FaCloudflare key="icon" />,
-      ,
+      <IoLogoVercel key="icon" />,
     ],
     href: "/portfolio",
     status: "active",
   },
   {
-    title: "Harman Kardon",
+    title: "CPU Mobile App",
     description:
-      "Harman Kardon delivers premium audio solutions that redefine the way you experience sound. With a legacy spanning over 65 years, our commitment to innovation and craftsmanship shines through in every product we create. Whether you're enjoying music, movies, or gaming, our meticulously engineered speakers and headphones immerse you in unparalleled audio quality, with crisp highs, rich midranges, and deep, powerful bass. Our intuitive user interfaces ensure seamless integration into your lifestyle, making it effortless to control and customize your audio experience. Elevate your senses with Harman Kardon, where cutting-edge technology meets timeless elegance.",
-    date: "2024.02.29 - 2024.03.01 ",
+      "Designed an early mobile app prototype for Central Philippine University to enhance student access to campus services, reflecting core UX values of clarity and accessibility.",
+    tags: ["Curated (08/08)", "UI & UX (08/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<FaMobileButton key="ricon" />],
     colorBG: "bg-yellow-500",
     colorFont: "text-yellow-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
-    href: "/harman-kardon",
-    status: "active",
-  },
-  {
-    title: "Pedigree Club PH",
-    description:
-      "Pedigree is a well-known brand specializing in dog food and treats. They offer a range of products catering to different life stages and dietary needs of dogs. Pedigree emphasizes nutrition, taste, and quality ingredients in their formulas, aiming to provide balanced meals to support dogs' health and vitality. With a focus on affordability and accessibility, Pedigree products are widely available in stores globally, making them a popular choice for dog owners seeking reliable nutrition for their pets.",
-    date: "2023.10.17 - 2023.10.20 ",
-    colorBG: "bg-yellow-500",
-    colorFont: "text-yellow-500",
-    // eslint-disable-next-line react/jsx-key
-    icon: [<FaFigma key="icon" />],
-    href: "/pedigree-club-ph",
-    status: "active",
-  },
-  {
-    title: "CPU App",
-    description:
-      "Central Philippine University (CPU) is a private university located in the Philippines. Founded in 1905 as the Jaro Industrial School, it has evolved through various transformations, including the establishment of a junior college in 1923 and attainment of university status in 1953. Today, CPU is a well-rounded institution offering a wide range of academic programs from basic education to postgraduate levels. The university is known for its rich history, academic excellence, and commitment to Christian values, making it one of the top private universities in the Philippines.",
-    date: "2017",
-    colorBG: "bg-yellow-500",
-    colorFont: "text-yellow-500",
-    // eslint-disable-next-line react/jsx-key
     icon: [<SiAdobexd key="icon" />],
     href: "/cpu-app",
     status: "active",

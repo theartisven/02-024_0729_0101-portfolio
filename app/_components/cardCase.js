@@ -6,70 +6,91 @@ import { FaLock } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function CardCase(props) {
-	return props.status === "active" ? (
-		<motion.div
-			whileHover={{ scale: 1.025 }}
-			transition={{
-				type: "spring",
-				stiffness: 600,
-				damping: 30,
-				duration: 0.25,
-			}}
-		>
-			<Link
-				href={props.href}
-				className="cardcase w-full h-full  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-2 2xl:gap-4"
-			>
-				<div className="flex flex-row justify-between items-center w-full">
-					<div
-						className={`h-[4px] w-[24px] rounded-full ${props.colorBG}`}
-					></div>
-					<h3 className={`${props.colorFont} font-bold text-xs font-jet`}>
-						{props.date}
-					</h3>
-					<div
-						className={`h-[4px] w-[24px] rounded-full ${props.colorBG}`}
-					></div>
-				</div>
+  const isActive = props.status === "active";
 
-				<div className="h-[1px] bg-neutral-300 w-full dark:bg-neutral-200 "></div>
-				<div className="flex flex-col gap-x-3">
-					<h1 className="text-base text-neutral-800 font-medium font-jet dark:text-white md:text-xl">
-						{props.title}
-					</h1>
-					<h2 className="text-xs text-neutral-400 font-jet text-ellipsis overflow-hidden line-clamp-2 text-pretty dark:text-white xl:line-clamp-3">
-						{props.description}
-					</h2>
-				</div>
+  return (
+    <motion.div
+      whileHover={{ scale: 1.005 }}
+      transition={{
+        type: "spring",
+        stiffness: 600,
+        damping: 30,
+        duration: 0.25,
+      }}
+      className="cardcase gap-2 w-full grow lg:w-[30%] md:h-[30%] bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
+    >
+      <Link
+        href={isActive ? props.href : "/"}
+        className="flex h-full justify-between flex-col gap-2"
+      >
+        <div className="flex flex-row justify-between items-center w-full">
+          {Array.isArray(props.tags) && props.tags.length > 0 ? (
+            props.tags.map((tag, index) => (
+              <h2
+                key={index}
+                className="text-[10px] text-neutral-400 font-jet dark:text-white whitespace-pre-line leading-[150%]"
+              >
+                {tag}
+              </h2>
+            ))
+          ) : (
+            <p>No tags available</p> // You can show something else when `tags` is empty or not an array
+          )}
+        </div>
 
-				<div className="h-[1px] bg-neutral-300 w-full dark:bg-neutral-200"></div>
-				<div className="flex flex-row justify-between items-center w-full text-neutral-400 dark:text-white">
-					<div className="flex flex-row gap-2">
-						{props.icon.map((icon, index) => (
-							<span key={index}>{icon}</span>
-						))}
-					</div>
-					<RiLinkM />
-				</div>
-			</Link>
-		</motion.div>
-	) : (
-		<motion.div
-			whileHover={{ scale: 1.025 }}
-			transition={{
-				type: "spring",
-				stiffness: 600,
-				damping: 20,
-				duration: 0.5,
-			}}
-		>
-			<div
-				href={props.href}
-				className=" cardcase w-full h-full text-base text-neutral-800  dark:text-white font-medium font-jet md:text-xl bg-white flex flex-col items-center justify-center p-4 rounded-lg shadow-lg dark:bg-neutral-900 gap-2 2xl:gap-4"
-			>
-				<div className={``}>{props.title}</div>
-				<FaLock />
-			</div>
-		</motion.div>
-	);
+        {/* Divider */}
+        <div className="h-[1px] bg-neutral-50 w-full dark:bg-neutral-50"></div>
+
+        {/* Content Section */}
+        <h1
+          className={`${
+            isActive ? props.colorFont : "text-neutral-400"
+          } font-medium font-jet dark:text-white md:text-m `}
+        >
+          {props.title}
+        </h1>
+
+        <div className="flex flex-col gap-x-3">
+          <h2 className="text-xs text-neutral-500 font-jet text-ellipsis overflow-hidden line-clamp-3 text-pretty dark:text-white xl:line-clamp-4  whitespace-pre-line leading-[150%]">
+            {isActive
+              ? props.description
+              : "The page is currently being worked on.\n\n\n"}
+          </h2>
+        </div>
+
+        {/* Divider */}
+        <div className="h-[1px] bg-neutral-50 w-full dark:bg-neutral-50"></div>
+
+        {/* Footer Section */}
+        <div
+          className={`flex flex-row justify-between items-center w-full ${
+            isActive ? props.colorFont : "text-neutral-500"
+          } dark:text-white`}
+        >
+          <div className="flex flex-row gap-2">
+            {props.icon.map((icon, index) => (
+              <span key={index}>{icon}</span>
+            ))}
+          </div>
+          <div className="flex flex-row gap-2">
+            <div
+              className={`flex justify-center p-1 w-[32px] rounded-full ${
+                isActive ? props.colorBG : "bg-neutral-400"
+              } text-white dark:text-neutral-800 md:text-[0.75rem]`}
+            >
+              {props.leftIcon}
+            </div>
+
+            <div
+              className={`flex justify-center p-1 w-[32px] rounded-full ${
+                isActive ? props.colorBG : "bg-neutral-400"
+              } text-white dark:text-neutral-800 md:text-[0.75rem]`}
+            >
+              {isActive ? props.rightIcon : <FaLock />}
+            </div>
+          </div>
+        </div>
+      </Link>
+    </motion.div>
+  );
 }

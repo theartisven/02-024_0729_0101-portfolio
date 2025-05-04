@@ -1,18 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* Global Styles */
 * {
-  font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif,
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "JetBrains Mono", monospace;
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
+/* Responsive Layout - Basic Padding */
 nav,
 .content {
   padding: 1rem;
@@ -23,53 +25,45 @@ nav,
   --delay-increment: 150ms;
 }
 
+/* Hover Effect for Cardcase */
 .content > .cardcase:hover {
   transform: translateY(-5px);
   transition: all 400ms ease-in-out;
 }
 
+/* Font Styles */
 .font-jet {
   font-family: "JetBrains Mono", monospace !important;
 }
-/* Webkit Browsers (Chrome, Safari) */
+
+/* Scrollbar Styling for Webkit Browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
-  height: 8px; /* Height of the horizontal scrollbar */
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Light gray background for the scrollbar track */
-  border-radius: 10px; /* Rounded corners */
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Darker gray for the draggable part of the scrollbar */
-  border-radius: 10px; /* Rounded corners */
+  background: #888;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a7a7a7; /* Darker gray when the scrollbar is hovered */
+  background: #a7a7a7;
 }
 
-/* Firefox */
+/* Firefox Scrollbar */
 * {
-  scrollbar-width: thin; /* Make the scrollbar thinner */
-  scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar and track */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
   scroll-snap-type: proximity;
 }
 
-/* nav {
-	height: 72px;
-}
-
-.content {
-	height: 750px;
-}
-footer {
-	height: 24px;
-}
- */
-
+/* Background Dots (Grid Background) */
 .bg_dots {
   position: absolute;
   inset: 0;
@@ -83,10 +77,36 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   .bg_dots {
-    background-color: #171717; /* Dark mode background */
-    background-image: radial-gradient(
-      hsl(0, 0%, 5%) 1px,
-      transparent 1px
-    ); /* Adjust color for dark mode */
+    background-color: #171717;
+    background-image: radial-gradient(hsl(0, 0%, 5%) 1px, transparent 1px);
   }
+}
+
+/* Add Responsive Utilities */
+@media (min-width: 640px) {
+  /* Adjust for small screens (e.g., mobile devices) */
+  nav {
+    height: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjust for tablet and larger screens */
+  .content {
+    height: 750px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Adjust for larger desktops */
+  footer {
+    height: 24px;
+  }
+}
+
+/* Utility for Container Widths */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

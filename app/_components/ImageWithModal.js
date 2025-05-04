@@ -14,27 +14,30 @@ export default function ImageWithModal(props) {
       <img
         src={props.src}
         alt={props.alt}
-        className="cursor-pointer max-w-full h-auto hover:scale-105 ease-in-out duration-300"
+        className="cursor-pointer max-w-full h-auto hover:scale-105 ease-in-out duration-300 rounded-lg"
         onClick={openModal}
       />
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50 backdrop-blur-sm"
+          className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50 backdrop-blur-xs "
           onClick={closeModal}
         >
-          <div className="relative " onClick={(e) => e.stopPropagation()}>
+          <div
+            className="relative flex justify-center "
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={props.src}
               alt={props.alt}
               className="max-w-full max-h-[75vh] ld:max-w-[75vw] object-contain rounded-lg overflow-hidden"
             />
             <button
-              className="absolute -top-8 -right-4 text-2xl font-bold text-white"
+              className="absolute -top-8 -right-4 text-xl font-medium text-white"
               onClick={closeModal}
             >
               ×
             </button>
-            <div className="bg-black bg-opacity-10 backdrop-blur-sm absolute -bottom-8 inset-x-0 text-xs p-2 font-bold text-white text-center">
+            <div className="bg-black bg-opacity-10 absolute -bottom-10 inset-x-0 text-xs p-2 font-medium text-white text-center rounded-lg mt-4 w-fit">
               {props.alt}
             </div>
           </div>
