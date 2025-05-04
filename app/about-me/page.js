@@ -136,7 +136,7 @@ export default function AboutMe() {
   return (
     <div className="content bg-neutral-50 w-full dark:bg-neutral-800 p-4 gap-2 flex flex-col  lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center overflow-x-hidden overflow-y-scroll rounded">
       <div className="flex flex-col gap-2 items-center justify-center h-100vh ">
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
               \\experiences
@@ -166,7 +166,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
               \\certificates
@@ -197,7 +197,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
               \\languages
@@ -219,7 +219,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] outline outline-1 outline-neutral-300 dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
               \\softwares
