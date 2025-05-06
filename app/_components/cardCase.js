@@ -17,7 +17,7 @@ export default function CardCase(props) {
         damping: 30,
         duration: 0.25,
       }}
-      className="cardcase gap-2 w-full grow lg:w-[30%] md:h-[30%] bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
+      className="cardcase gap-2 w-full grow lg:w-[30%]  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
     >
       <Link
         href={isActive ? props.href : "/"}
@@ -51,7 +51,7 @@ export default function CardCase(props) {
         </h1>
 
         <div className="flex flex-col gap-x-3">
-          <h2 className="text-xs text-neutral-500 font-jet text-ellipsis overflow-hidden line-clamp-3 text-pretty dark:text-white xl:line-clamp-4  whitespace-pre-line leading-[150%]">
+          <h2 className="text-xs text-neutral-500 font-jet text-ellipsis overflow-hidden line-clamp-3 text-pretty dark:text-white  whitespace-pre-line leading-[150%]">
             {isActive
               ? props.description
               : "The page is currently being worked on.\n\n\n"}
