@@ -134,7 +134,15 @@ export default function AboutMe() {
     { name: "Da Vinci Resolve", icon: <SiDavinciresolve /> },
   ];
   return (
-    <div className="content bg-neutral-50 w-full dark:bg-neutral-800 p-4 gap-2 flex flex-col  lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center overflow-x-hidden overflow-y-scroll rounded">
+    <div
+      className="relative content flex flex-wrap items-start gap-2 p-4 justify-center w-full max-w-full overflow-y-auto overflow-x-hidden rounded bg-neutral-50 dark:bg-neutral-800 m-2
+    h-[84vh]
+    md:h-[86vh]
+    lg:h-[84vh]
+    lg:max-w-[1000px] 
+    xl:max-w-[1200px] 
+    2xl:h-[840px]"
+    >
       <div className="flex flex-col gap-2 items-center justify-center h-100vh ">
         <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
           <div className="flex flex-row justify-between">
@@ -156,7 +164,7 @@ export default function AboutMe() {
                       {experience.date}
                     </h4>
                     {experience.isCurrent && (
-                      <div className="absolute top-2 right-2 bg-green-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-white text-xs">
+                      <div className="absolute bottom-2 right-2 lg:bottom-2 bg-green-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-white text-xs">
                         <RiCheckFill />
                       </div>
                     )}
@@ -185,7 +193,7 @@ export default function AboutMe() {
                     <h4 className="font-jet text-xs text-neutral-500 dark:text-white">
                       {course.date}
                     </h4>
-                    <div className="absolute top-2 right-2 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-neutral-500 text-sm dark:text-white">
+                    <div className="absolute top-2 right-2 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-neutral-400 text-sm dark:text-white">
                       {course.icon}
                     </div>
                     {course.notUsed && (

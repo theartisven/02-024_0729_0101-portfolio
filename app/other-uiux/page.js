@@ -6,7 +6,9 @@ export default function Other_Works() {
   return (
     <div
       className="relative content flex flex-wrap items-start gap-2 p-4 w-full max-w-full overflow-y-auto overflow-x-hidden rounded bg-neutral-50 dark:bg-neutral-800 
-    md:max-h-[80vh] 
+    h-[84vh]
+    md:h-[86vh]
+    lg:h-[84vh]
     lg:max-w-[1000px] 
     xl:max-w-[1200px] 
     2xl:h-[840px]"

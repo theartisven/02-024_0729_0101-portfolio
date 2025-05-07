@@ -17,7 +17,7 @@ export default function CardCase(props) {
         damping: 30,
         duration: 0.25,
       }}
-      className="cardcase gap-2 w-full grow lg:w-[30%]  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
+      className="cardcase gap-2 w-full grow sm:w-[50%] lg:w-[40%] xl:w-[30%] md:h-[33%] xl:h-[32%]  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
     >
       <Link
         href={isActive ? props.href : "/"}
@@ -28,7 +28,7 @@ export default function CardCase(props) {
             props.tags.map((tag, index) => (
               <h2
                 key={index}
-                className="text-[10px] text-neutral-400 font-jet dark:text-white whitespace-pre-line leading-[150%]"
+                className="text-[10px] text-neutral-500 font-jet dark:text-white whitespace-pre-line leading-[150%]"
               >
                 {tag}
               </h2>
@@ -44,7 +44,7 @@ export default function CardCase(props) {
         {/* Content Section */}
         <h1
           className={`${
-            isActive ? props.colorFont : "text-neutral-400"
+            isActive ? props.colorFont : "text-neutral-500"
           } font-medium font-jet dark:text-white md:text-m `}
         >
           {props.title}

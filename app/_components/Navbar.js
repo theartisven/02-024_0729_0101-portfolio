@@ -50,7 +50,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-neutral-900 bg-opacity-99 z-50 flex flex-col items-center justify-center md:hidden">
+        <div className="fixed inset-0 bg-neutral-50 dark:bg-neutral-800  bg-opacity-75 z-50 flex flex-col items-center justify-center md:hidden">
           <button
             onClick={toggleMenu}
             className="absolute top-5 right-5 text-violet-500 font-medium px-1 py-2"
