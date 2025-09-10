@@ -141,8 +141,8 @@ export default function AboutMe() {
     xl:max-w-[1440px] 
     2xl:h-[840px]"
     >
-      <div className="flex flex-col gap-2 items-center justify-center h-100vh ">
-        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
+      <div className="flex flex-col gap-[3rem] items-center justify-center h-100vh ">
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\experiences
@@ -172,7 +172,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\certificates
@@ -203,7 +203,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]  ">
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]  ">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\languages
@@ -225,7 +225,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem] ">
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem] ">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\softwares
@@ -260,7 +260,7 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
             <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\things im learning

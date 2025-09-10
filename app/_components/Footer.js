@@ -1,7 +1,5 @@
 import "../globals.css";
-import { AiFillInstagram } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { LuInstagram,LuLinkedin } from "react-icons/lu";
 import Link from "next/link";
 
 export default function Footer() {
@@ -12,8 +10,9 @@ export default function Footer() {
           <Link
             href="https://www.linkedin.com/in/svenherokaufmann"
             className="hover:text-purple-500"
+            alt="Linked Link"
           >
-            <FaLinkedin />
+            <LuLinkedin />
           </Link>
         </div>
         <div>Sven Hero Kaufmann</div>
@@ -24,8 +23,9 @@ export default function Footer() {
           <Link
             href="https://www.instagram.com/theartisven/"
             className="hover:text-purple-500"
+            alt="Instagram Link"
           >
-            <AiFillInstagram />
+            <LuInstagram />
           </Link>
           {/*           <Link
             href="https://www.linkedin.com/in/sven-hero-kaufmann-88a961141/"

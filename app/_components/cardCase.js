@@ -17,7 +17,7 @@ export default function CardCase(props) {
         damping: 30,
         duration: 0.25,
       }}
-      className="cardcase gap-2 w-full grow sm:w-[50%] lg:w-[40%] xl:w-[30%] md:h-[31%] xl:h-[31%]  bg-zinc-50 flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-zinc-900 lg:gap"
+      className="cardcase gap-2 w-full grow sm:w-[50%] lg:w-[40%] xl:w-[30%] md:h-[31%] xl:h-[31%]  bg-zinc-50 flex flex-col justify-between content-between p-2 rounded-lg shadow-lg dark:bg-zinc-900 md:gap-1"
     >
       <Link
         href={isActive ? props.href : ""}
