@@ -7,7 +7,7 @@ export default function ImageWithModal(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false)s;
+  const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className="relative inline-block overflow-hidden rounded-lg ">
