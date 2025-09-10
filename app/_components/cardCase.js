@@ -41,9 +41,7 @@ export default function CardCase(props) {
 
         {/* Content Section */}
         <h1
-          className={`${
-            isActive ? props.colorFont : "text-zinc-500"
-          } font-medium font-jet dark:text-zinc-50 md:text-m `}
+          className={"text-zinc-700 font-medium font-jet dark:text-zinc-50 md:text-m"}
         >
           {props.title}
         </h1>
