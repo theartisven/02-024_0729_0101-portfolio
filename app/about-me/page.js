@@ -1,5 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-no-comment-textnodes */
 import { RiCheckFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { IoLogoGoogle } from "react-icons/io";
 import { FaLinkedin, FaFigma, FaPython } from "react-icons/fa";
@@ -135,12 +133,12 @@ export default function AboutMe() {
   ];
   return (
     <div
-      className="relative content flex flex-wrap items-start gap-2 p-4 justify-center w-full max-w-full overflow-y-auto overflow-x-hidden rounded bg-neutral-50 dark:bg-neutral-800 m-2
-    h-[84vh]
+      className="relative content flex flex-wrap justify-center gap-4 p-4 w-full max-w-full overflow-hidden rounded bg-neutral-50 dark:bg-neutral-800 
+    h-[86vh]
     md:h-[86vh]
-    lg:h-[84vh]
+    lg:h-[86vh]
     lg:max-w-[1000px] 
-    xl:max-w-[1200px] 
+    xl:max-w-[1440px] 
     2xl:h-[840px]"
     >
       <div className="flex flex-col gap-2 items-center justify-center h-100vh ">

@@ -5,12 +5,12 @@ import { caseStudies } from "./data";
 export default function Other_Works() {
   return (
     <div
-      className="relative content flex flex-wrap items-start gap-2 p-4 w-full max-w-full overflow-y-auto overflow-x-hidden rounded bg-neutral-50 dark:bg-neutral-800 
-    h-[84vh]
+      className="relative content flex flex-wrap items-start gap-4 p-4 w-full max-w-full overflow-hidden rounded bg-neutral-50 dark:bg-neutral-800 
+    h-[86vh]
     md:h-[86vh]
-    lg:h-[84vh]
+    lg:h-[86vh]
     lg:max-w-[1000px] 
-    xl:max-w-[1200px] 
+    xl:max-w-[1440px] 
     2xl:h-[840px]"
     >
       {caseStudies.map((caseStudy, index) => (

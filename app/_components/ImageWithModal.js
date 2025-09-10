@@ -7,14 +7,14 @@ export default function ImageWithModal(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => setIsModalOpen(false)s;
 
   return (
-    <div className="relative inline-block overflow-hidden ">
+    <div className="relative inline-block overflow-hidden rounded-lg ">
       <img
         src={props.src}
         alt={props.alt}
-        className="cursor-pointer max-w-full h-auto hover:scale-105 ease-in-out duration-300 rounded-lg"
+        className="cursor-pointer max-w-full h-auto hover:scale-105 ease-in-out duration-300 "
         onClick={openModal}
       />
       {isModalOpen && (
@@ -37,7 +37,7 @@ export default function ImageWithModal(props) {
             >
               ×
             </button>
-            <div className="bg-black bg-opacity-10 absolute -bottom-10 inset-x-0 text-xs p-2 font-medium text-white text-center rounded-lg mt-4 w-fit">
+            <div className="bg-black bg-opacity-20 absolute -bottom-10 inset-x-0 text-xs p-2 font-medium text-white text-center rounded-lg mt-4 w-fit">
               {props.alt}
             </div>
           </div>

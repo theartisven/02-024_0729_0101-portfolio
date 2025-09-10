@@ -78,7 +78,7 @@ nav,
 @media (prefers-color-scheme: dark) {
   .bg_dots {
     background-color: #171717;
-    background-image: radial-gradient(hsl(0, 0%, 5%) 1px, transparent 1px);
+    background-image: radial-gradient(hsl(0, 0%, 5%) px, transparent 1px);
   }
 }
 

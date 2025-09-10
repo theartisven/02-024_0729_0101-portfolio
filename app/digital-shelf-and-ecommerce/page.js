@@ -144,7 +144,7 @@ export default function CaseStudy1() {
               href="https://www.youtube.com/watch?v=4xk_JyNoYdY"
               className=" underline text-xs"
             >
-              https://tinyurl.com/584r5mku
+              link 
             </a>
           </div>
         </div>

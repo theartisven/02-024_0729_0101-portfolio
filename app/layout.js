@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body className="flex h-screen flex-row justify-center items-baseline lg:items-center dark:bg-neutral-900 p-2  ">
         <div className="bg_dots"></div>
 
-        <div className="flex flex-col lg:w-[1200px] lg:h-screen gap-2 justify-center items-center overflow-hidden rounded">
+        <div className="flex flex-col lg:w-[1200px] lg:h-[85vh] gap-4 justify-center items-center overflow-hidden rounded">
           <Navbar />
           {children}
           <Footer />

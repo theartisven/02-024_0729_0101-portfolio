@@ -10,14 +10,14 @@ export default function CardCase(props) {
 
   return (
     <motion.div
-      whileHover={{ scale: 1.005 }}
+      whileHover={{ scale: 1.05 }}
       transition={{
         type: "spring",
         stiffness: 600,
         damping: 30,
         duration: 0.25,
       }}
-      className="cardcase gap-2 w-full grow sm:w-[50%] lg:w-[40%] xl:w-[30%] md:h-[33%] xl:h-[32%]  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap-2 "
+      className="cardcase gap-2 w-full grow sm:w-[50%] lg:w-[40%] xl:w-[30%] md:h-[31%] xl:h-[31%]  bg-white flex flex-col justify-between content-between p-4 rounded-lg shadow-lg dark:bg-neutral-900 lg:gap- "
     >
       <Link
         href={isActive ? props.href : "/"}
@@ -76,7 +76,7 @@ export default function CardCase(props) {
             <div
               className={`flex justify-center p-1 w-[32px] rounded-full ${
                 isActive ? props.colorBG : "bg-neutral-400"
-              } text-white dark:text-neutral-800 md:text-[0.75rem]`}
+              } text-white  md:text-[0.75rem]`}
             >
               {props.leftIcon}
             </div>
@@ -84,7 +84,7 @@ export default function CardCase(props) {
             <div
               className={`flex justify-center p-1 w-[32px] rounded-full ${
                 isActive ? props.colorBG : "bg-neutral-400"
-              } text-white dark:text-neutral-800 md:text-[0.75rem]`}
+              } text-white md:text-[0.75rem]`}
             >
               {isActive ? props.rightIcon : <FaLock />}
             </div>
