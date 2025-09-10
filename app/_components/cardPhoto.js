@@ -8,9 +8,9 @@ export default function CardPhoto({ images, colorFont }) {
   const columnClass = images.length > 4 ? "md:columns-3" : "md:columns-2";
 
   return (
-    <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]   dark:bg-neutral-900 dark:outline-none">
+    <div className="flex flex-col p-6 gap-2 bg-zinc-50 rounded-xl w-[90vw] lg:w-[47rem]   dark:bg-zinc-900 dark:outline-none">
       <h1
-        className={`${colorFont} font-medium font-jet dark:text-white md:text-m `}
+        className={`${colorFont} font-medium font-jet dark:text-zinc-50 md:text-m `}
       >
         \\ photo
       </h1>

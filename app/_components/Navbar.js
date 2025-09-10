@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex flex-row justify-between items-center bg-neutral-50  dark:bg-neutral-800 h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[992px] xl:max-w-[1200px] relative min-h-[3rem]">
+    <nav className="flex flex-row justify-between items-center  h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[992px] xl:max-w-[1200px] relative min-h-[3rem]">
       <Link href="/">
         <img
           src="../img/asset/logo.png"
@@ -50,7 +50,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-neutral-50 dark:bg-neutral-800  bg-opacity-75  z-50 flex flex-col items-center justify-center md:hidden">
+        <div className="fixed inset-0 bg-zinc-50 dark:bg-zinc-900  bg-opacity-75  z-50 flex flex-col items-center justify-center md:hidden">
           <button
             onClick={toggleMenu}
             className="absolute top-5 right-5 text-violet-500 font-medium px-1 py-2"

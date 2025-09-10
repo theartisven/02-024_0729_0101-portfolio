@@ -71,14 +71,17 @@ nav,
   height: 100%;
   width: 100%;
   background-color: white;
-  background-image: radial-gradient(hsl(0, 0%, 90%) 1px, transparent 1px);
+  background-image: radial-gradient(
+    oklch(0.1706 0.005 285.823) 1px,
+    transparent 1px
+  );
   background-size: 16px 16px;
 }
 
 @media (prefers-color-scheme: dark) {
   .bg_dots {
-    background-color: #171717;
-    background-image: radial-gradient(hsl(0, 0%, 5%) px, transparent 1px);
+    background-color: oklch(0.15 0 47);
+    background-image: radial-gradient(oklch(0.1973 0.005 285.823) 1px, transparent 1px);
   }
 }
 

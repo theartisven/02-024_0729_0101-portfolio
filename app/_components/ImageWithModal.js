@@ -19,7 +19,7 @@ export default function ImageWithModal(props) {
       />
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50 backdrop-blur-xs "
+          className="fixed inset-0 bg-black bg-opacity-10 flex items-center justify-center z-50 backdrop-blur-md "
           onClick={closeModal}
         >
           <div
@@ -32,12 +32,12 @@ export default function ImageWithModal(props) {
               className="max-w-full max-h-[75vh] ld:max-w-[75vw] object-contain rounded-lg overflow-hidden"
             />
             <button
-              className="absolute -top-8 -right-4 text-xl font-medium text-white"
+              className="absolute -top-8 -right-4 text-xl font-medium text-zinc-50"
               onClick={closeModal}
             >
               ×
             </button>
-            <div className="bg-black bg-opacity-20 absolute -bottom-10 inset-x-0 text-xs p-2 font-medium text-white text-center rounded-lg mt-4 w-fit">
+            <div className="bg-black bg-opacity-20 absolute -bottom-10 inset-x-0 text-xs p-2 font-medium text-zinc-50 text-center rounded-lg mt-4 w-fit">
               {props.alt}
             </div>
           </div>

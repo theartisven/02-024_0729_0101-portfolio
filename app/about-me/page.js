@@ -45,56 +45,56 @@ export default function AboutMe() {
     {
       title: "Build Wireframes and Low-Fidelity Prototypes",
       issuer: "Coursera",
-      date: "Issued 2022.12",
+      date: "2022.12",
       icon: <IoLogoGoogle />,
     },
     {
       title: "Start the UX Design Process: Empathize, Define, and Ideate",
       issuer: "Coursera",
-      date: "Issued 2022.11",
+      date: "2022.11",
       icon: <IoLogoGoogle />,
     },
     {
       title: "Foundations of User Experience (UX) Design",
       issuer: "Coursera",
-      date: "Issued 2022.10",
+      date: "2022.10",
       icon: <IoLogoGoogle />,
     },
     {
       title: "Completion in UX & Web Design Master Course",
       issuer: "Udemy",
-      date: "Issued 2018.08",
+      date: "2018.08",
       icon: <SiUdemy />,
     },
     {
       title:
         'Certificate of Participation "The Great Graphics Workshop by Jann Galinno" (1st place)',
       issuer: "Jann Galinno",
-      date: "Issued 2018.08",
+      date: "2018.08",
       icon: <GrWorkshop />,
     },
     {
       title: "Become a Data Analyst",
       issuer: "LinkedIn",
-      date: "Issued 2022.09",
+      date: "2022.09",
       icon: <FaLinkedin />,
     },
     {
       title: "Data Cleaning in Python Essential Training",
       issuer: "LinkedIn",
-      date: "Issued 2022.09",
+      date: "2022.09",
       icon: <FaLinkedin />,
     },
     {
       title: "R Essential: Wrangling and Visualizing Data",
       issuer: "LinkedIn",
-      date: "Issued 2022.09",
+      date: "2022.09",
       icon: <FaLinkedin />,
     },
     {
       title: "Power BI Essential Training",
       issuer: "LinkedIn",
-      date: "Issued 2022.08",
+      date: "2022.08",
       icon: <FaLinkedin />,
     },
   ];
@@ -133,7 +133,7 @@ export default function AboutMe() {
   ];
   return (
     <div
-      className="relative content flex flex-wrap justify-center gap-4 p-4 w-full max-w-full overflow-hidden rounded bg-neutral-50 dark:bg-neutral-800 
+      className="relative content flex flex-wrap justify-center gap-4 p-4 w-full max-w-full overflow-x-hidden overflow-y-scroll rounded 
     h-[86vh]
     md:h-[86vh]
     lg:h-[86vh]
@@ -142,27 +142,27 @@ export default function AboutMe() {
     2xl:h-[840px]"
     >
       <div className="flex flex-col gap-2 items-center justify-center h-100vh ">
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\experiences
               <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-3  grid-auto-flow">
                 {sectionExperiences.map((experience, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col gap-2 relative"
+                    className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col gap-2 relative"
                   >
-                    <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium">
+                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium">
                       {experience.title}
                     </h3>
-                    <h4 className="font-jet text-sm text-neutral-500 dark:text-white">
+                    <h4 className="font-jet text-sm text-zinc-500 dark:text-zinc-400">
                       {experience.company}
                     </h4>
-                    <h4 className="font-jet text-xs text-neutral-500 dark:text-white">
+                    <h4 className="font-jet text-xs text-zinc-500 dark:text-zinc-500">
                       {experience.date}
                     </h4>
                     {experience.isCurrent && (
-                      <div className="absolute bottom-2 right-2 lg:bottom-2 bg-green-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-white text-xs">
+                      <div className="absolute bottom-2 right-2 lg:bottom-2 bg-green-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-zinc-50 text-xs">
                         <RiCheckFill />
                       </div>
                     )}
@@ -172,26 +172,26 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\certificates
               <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-2 grid-auto-flow">
                 {sectionCertificate.map((course, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col gap-2 relative"
+                    className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col gap-2 relative"
                   >
-                    <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
+                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                       {course.title}
                     </h3>
-                    <h4 className="font-jet text-sm text-neutral-500 dark:text-white">
+                    <h4 className="font-jet text-sm text-zinc-500 dark:text-zinc-400">
                       {course.issuer}
                     </h4>
-                    <h4 className="font-jet text-xs text-neutral-500 dark:text-white">
+                    <h4 className="font-jet text-xs text-zinc-500 dark:text-zinc-500">
                       {course.date}
                     </h4>
-                    <div className="absolute top-2 right-2 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-neutral-400 text-sm dark:text-white">
+                    <div className="absolute top-2 right-2 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-zinc-400 text-sm dark:text-zinc-50">
                       {course.icon}
                     </div>
                     {course.notUsed && (
@@ -203,17 +203,17 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]  ">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\languages
               <div className="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4  grid-auto-flow">
                 {sectionLanguage.map((language, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 xlitems-center justify-between"
+                    className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col md:flex-row gap-2 xlitems-center justify-between"
                   >
-                    <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
+                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                       {language.name}
                     </h3>
                     {language.isLearning && (
@@ -225,21 +225,21 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem] ">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\softwares
               <div className="grid gap-2 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3  grid-auto-flow">
                 {sectionSoftware.map((tool, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
+                    className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
                   >
                     <div className="flex flex-row gap-2 items-center ">
-                      <div className="text-neutral-500 dark:text-white">
+                      <div className="text-zinc-500 dark:text-zinc-50">
                         {tool.icon}
                       </div>
-                      <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
+                      <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                         {tool.name}
                       </h3>
                     </div>
@@ -260,21 +260,21 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem] dark:bg-neutral-900 dark:outline-none">
+        <div className="flex flex-col p-6 gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-neutral-800 dark:text-white flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\things im learning
               <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-2  grid-auto-flow">
                 {sectionLearning.map((tool, index) => (
                   <div
                     key={index}
-                    className="bg-white dark:bg-neutral-900 p-4 rounded-lg outline outline-1 outline-neutral-100 dark:outline-black shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
+                    className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col md:flex-row gap-2 justify-between text-base"
                   >
                     <div className="flex flex-row gap-2 items-center">
-                      <div className="text-neutral-500 dark:text-white">
+                      <div className="text-zinc-500 dark:text-zinc-50">
                         {tool.icon}
                       </div>
-                      <h3 className="font-jet text-base text-neutral-800 dark:text-white font-medium text-balance">
+                      <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                         {tool.name}
                       </h3>
                     </div>

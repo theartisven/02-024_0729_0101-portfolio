@@ -10,10 +10,10 @@ export default function CardIndex({
   colorFont = "text-green-500",
 }) {
   return (
-    <div className="flex flex-col p-6 gap-2 bg-white rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-neutral-900 dark:outline-none">
+    <div className="flex flex-col p-6 gap-2 bg-zinc-50 rounded-xl w-[90vw] lg:w-[47rem]  dark:bg-zinc-900 dark:outline-none">
       <div className="flex grow w-full justify-between">
         <h1
-          className={`${colorFont} font-medium font-jet dark:text-white md:text-m `}
+          className={`${colorFont} font-medium font-jet dark:text-zinc-50 md:text-m `}
         >
           \\ {title}
         </h1>
@@ -24,13 +24,13 @@ export default function CardIndex({
               className={`h-2 rounded-full ${
                 i + 1 === number
                   ? `w-7 ${colorBG}`
-                  : "w-2 bg-white dark:bg-neutral-900"
+                  : "w-2 bg-zinc-50 dark:bg-zinc-900"
               } outline outline-1 ${colorOutline}`}
             ></div>
           ))}
         </div>
       </div>
-      <div className="font-jet text-xs md:text-l text-neutral-500 max-h-[412px] max-w-[85ch] dark:text-white whitespace-pre-line leading-[150%]">
+      <div className="font-jet text-xs md:text-l text-zinc-500 max-h-[412px] max-w-[85ch] dark:text-zinc-500 whitespace-pre-line leading-[150%]">
         {description}
       </div>
     </div>

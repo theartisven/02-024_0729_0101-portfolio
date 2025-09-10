@@ -23,7 +23,7 @@ export default function VideoWithModal(props) {
 					onClick={closeModal}
 				>
 					<div
-						className="relative bg-white p-4 rounded shadow-lg"
+						className="relative bg-zinc-50 p-4 rounded shadow-lg"
 						onClick={(e) => e.stopPropagation()}
 					>
 						<video
@@ -33,7 +33,7 @@ export default function VideoWithModal(props) {
 							autoPlay
 						/>
 						<button
-							className="absolute -top-8 -right-4 text-xl font-medium text-white"
+							className="absolute -top-8 -right-4 text-xl font-medium text-zinc-50"
 							onClick={closeModal}
 						>
 							×

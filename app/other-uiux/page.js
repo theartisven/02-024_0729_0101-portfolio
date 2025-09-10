@@ -5,7 +5,7 @@ import { caseStudies } from "./data";
 export default function Other_Works() {
   return (
     <div
-      className="relative content flex flex-wrap items-start gap-4 p-4 w-full max-w-full overflow-hidden rounded bg-neutral-50 dark:bg-neutral-800 
+      className="relative content flex flex-wrap items-start gap-4 p-4 w-full max-w-full overflow-hidden rounded 
     h-[86vh]
     md:h-[86vh]
     lg:h-[86vh]

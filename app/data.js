@@ -65,7 +65,7 @@ export const caseStudies = [
     title: "Personal Portfolio",
     description:
       "A living portfolio project to explore design systems, motion design, and front-end development with tools like Next.js, Framer Motion, and Cloudflare. Constantly evolving with my skills.",
-    tags: ["\\\\05", "UI & UX (07/11)"],
+    tags: ["\\\\05", "UI & UX (05/11)"],
     leftIcon: [<RiHeart3Fill key="licon" />],
     rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-orange-500",
@@ -84,7 +84,7 @@ export const caseStudies = [
     title: "CPU Mobile App",
     description:
       "Designed an early mobile app prototype for Central Philippine University to enhance student access to campus services, reflecting core UX values of clarity and accessibility.",
-    tags: ["\\\\06", "UI & UX (08/11)"],
+    tags: ["\\\\06", "UI & UX (06/11)"],
     leftIcon: [<HiCursorClick key="licon" />],
     rightIcon: [<FaMobileButton key="ricon" />],
     colorBG: "bg-yellow-500",
@@ -97,7 +97,7 @@ export const caseStudies = [
     title: "Honda Orico",
     description:
       "Developed a user-friendly platform for buying and selling certified used Honda vehicles. Focused on trust, ease of navigation, and vehicle detail clarity for the Indonesian market.",
-    tags: ["\\\\07", "UI & UX (05/11)"],
+    tags: ["\\\\07", "UI & UX (07/11)"],
     leftIcon: [<HiCursorClick key="licon" />],
     rightIcon: [<FaMobileButton key="ricon" />],
     colorBG: "bg-green-500",
@@ -110,7 +110,7 @@ export const caseStudies = [
     title: "Kawasaki India",
     description:
       "Crafted responsive e-commerce wireframes for the Indian market, designed to integrate into a future digital ecosystem.",
-    tags: ["\\\\08", "UI & UX (06/11)"],
+    tags: ["\\\\08", "UI & UX (08/11)"],
     leftIcon: [<HiCursorClick key="licon" />],
     rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
@@ -119,4 +119,7 @@ export const caseStudies = [
     href: "/kawasaki",
     status: "inactive",
   },
+  
+
+
 ];

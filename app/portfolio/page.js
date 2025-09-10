@@ -12,19 +12,19 @@ export const metadata = {
 };
 export default function CaseStudy6() {
   return (
-    <div className="content bg-neutral-50 w-full dark:bg-neutral-800 p-4 gap-2 flex flex-col overflow-y-scroll rounded-md lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center overflow-x-hidden ">
+    <div className="content w-full  p-4 gap-2 flex flex-col overflow-y-scroll rounded-md lg:max-w-[1000px] xl:max-w-[1200px] md:max-h-[80vh] 2xl:h-[840px] items-center overflow-x-hidden ">
       <div className="flex md:flex-row md:justify-between items-center gap-2 w-[90vw] lg:w-[47rem] flex-col">
         <Link
           href={"/"}
-          className="outline-neutral-500 flex flex-row items-center gap-2 outline-xs dark:text-white w-[105px]"
+          className="outline-zinc-500 flex flex-row items-center gap-2 outline-xs dark:text-zinc-50 w-[105px]"
         >
           <RiArrowLeftSLine />
           back
         </Link>
-        <div className="font-jet outline-xl text-xl  dark:text-white text-center">
+        <div className="font-jet outline-xl text-xl  dark:text-zinc-50 text-center">
           Portfolio
         </div>
-        <div className="bg-orange-500 outline-white outline-si w-fit px-3 py-1 rounded-full outline-xs flex items-center gap-2 text-white text-xs w-[105px]">
+        <div className="bg-orange-500 outline-zinc-50 outline-si w-fit px-3 py-1 rounded-full outline-xs flex items-center gap-2 text-zinc-50 text-xs w-[105px]">
           <IoIosDocument />
           On Going
         </div>
