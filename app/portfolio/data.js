@@ -2,7 +2,7 @@ export const cards = [
   {
     title: "intro",
     description:
-      "This project is created to manage customer interaction via social platform like WhatsApp and Line. This tools created manage interactions by 2 part: 1 is traditional customer dashboard, 2 is create a node based chatbot, and last is use the LLM to analyze manual and book.",
+      "A living portfolio project to explore design systems, motion design, and front-end development with tools like Next.js, Framer Motion, and Cloudflare. Constantly evolving with my skills.",
     colorBG: "bg-orange-500",
     colorOutline: "outline-orange-500",
     colorFont: "text-orange-500",
