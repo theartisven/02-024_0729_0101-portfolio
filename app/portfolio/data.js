@@ -2,7 +2,7 @@ export const cards = [
   {
     title: "intro",
     description:
-      "A living portfolio project to explore design systems, motion design, and front-end development with tools like Next.js, Framer Motion, and Cloudflare. Constantly evolving with my skillss",
+      "A living portfolio project to explore design systems, motion design, and front-end development with tools like Next.js, Framer Motion, and Cloudflare. Constantly evolving with my skills.",
     colorBG: "bg-orange-500",
     colorOutline: "outline-orange-500",
     colorFont: "text-orange-500",
