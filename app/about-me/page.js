@@ -1,17 +1,15 @@
+import Image from "next/image";
+
 import { RiCheckFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { IoLogoGoogle } from "react-icons/io";
 import { FaLinkedin, FaFigma, FaPython } from "react-icons/fa";
-import { FaWebflow, FaImage } from "react-icons/fa6";
-import {
-  SiUdemy,
-  SiAdobexd,
-  SiDavinciresolve,
-  SiAdobephotoshop,
-  SiAdobeaftereffects,
-} from "react-icons/si";
+import { FaWebflow } from "react-icons/fa6";
+import { SiUdemy, SiDavinciresolve } from "react-icons/si";
+import { TbBrandAdobeXd, TbBrandAdobePhotoshop } from "react-icons/tb";
 import { GrWorkshop } from "react-icons/gr";
 import { TbBrandBlender, TbBrandFramerMotion } from "react-icons/tb";
 import { HiCube } from "react-icons/hi2";
+
 import Protopie from "../../public/svg/Protopie.svg";
 import Axure from "../../public/svg/Axure.svg";
 
@@ -108,29 +106,23 @@ export default function AboutMe() {
 
   const sectionSoftware = [
     { name: "Figma", icon: <FaFigma /> },
-    { name: "Protopie", icon: <Protopie /> },
+    { name: "Protopie", icon: <Image src={Protopie} alt="Protopie" width={18} height={18} /> },
     { name: "Webflow", icon: <FaWebflow /> },
     { name: "Blender", icon: <TbBrandBlender /> },
-    { name: "Adobe XD", icon: <SiAdobexd /> },
-    { name: "Axure RP", icon: <Axure /> },
-    { name: "Photoshop", icon: <SiAdobephotoshop /> },
-    {
-      name: "After Effects",
-      icon: <SiAdobeaftereffects />,
-    },
+    { name: "Adobe XD", icon: <TbBrandAdobeXd /> },
+    { name: "Axure RP", icon: <Image src={Axure} alt="Axure" width={18} height={18} /> },
+    { name: "Photoshop", icon: <TbBrandAdobePhotoshop /> },
   ];
 
   const sectionLearning = [
     { name: "React JS", icon: <RiReactjsFill /> },
     { name: "Next JS", icon: <RiNextjsFill /> },
-    {
-      name: "Framer Motion",
-      icon: <TbBrandFramerMotion />,
-    },
+    { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
     { name: "3D Modelling", icon: <HiCube /> },
     { name: "Python", icon: <FaPython /> },
     { name: "Da Vinci Resolve", icon: <SiDavinciresolve /> },
   ];
+
   return (
     <div
       className="relative content flex flex-wrap justify-center gap-4 p-4 w-full max-w-full overflow-x-hidden overflow-y-scroll rounded 
@@ -142,11 +134,12 @@ export default function AboutMe() {
     2xl:h-[840px]"
     >
       <div className="flex flex-col gap-[3rem] items-center justify-center h-100vh ">
+        {/* EXPERIENCES */}
         <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\experiences
-              <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-3  grid-auto-flow">
+             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 grid-auto-flow">
                 {sectionExperiences.map((experience, index) => (
                   <div
                     key={index}
@@ -172,9 +165,11 @@ export default function AboutMe() {
             </h1>
           </div>
         </div>
+
+        {/* CERTIFICATES */}
         <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\certificates
               <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-2 grid-auto-flow">
                 {sectionCertificate.map((course, index) => (
@@ -194,20 +189,19 @@ export default function AboutMe() {
                     <div className="absolute top-2 right-2 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-zinc-400 text-sm dark:text-zinc-50">
                       {course.icon}
                     </div>
-                    {course.notUsed && (
-                      <div className="absolute bottom-2 right-2 w-fit h-fit px-2 py-1 rounded-full text-xs  font-medium outline outline-1  flex flex-row gap-2 items-center bg-orange-100 text-orange-500 outline-orange-500 dark:bg-orange-400/75 dark:text-orange-300 dark:outline-orange-400"></div>
-                    )}
                   </div>
                 ))}
               </div>
             </h1>
           </div>
         </div>
-        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]  ">
+
+        {/* LANGUAGES */}
+        <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\languages
-              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 xl:grid-cols-4  grid-auto-flow">
+              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 grid-auto-flow">
                 {sectionLanguage.map((language, index) => (
                   <div
                     key={index}
@@ -216,20 +210,19 @@ export default function AboutMe() {
                     <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                       {language.name}
                     </h3>
-                    {language.isLearning && (
-                      <div className="w-fit h-fit px-2 py-1 rounded-full  bg-yellow-100 text-yellow-500 font-medium outline outline-1 outline-yellow-500 text-xs dark:bg-yellow-400/75 dark:text-yellow-100 dark:outline-yellow-400"></div>
-                    )}
                   </div>
                 ))}
               </div>
             </h1>
           </div>
         </div>
+
+        {/* SOFTWARE */}
         <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem] ">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\softwares
-              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3  grid-auto-flow">
+              <div className="grid gap-2 grid-cols-1 md:grid-cols-2 2xl:grid-cols-2 grid-auto-flow">
                 {sectionSoftware.map((tool, index) => (
                   <div
                     key={index}
@@ -243,28 +236,19 @@ export default function AboutMe() {
                         {tool.name}
                       </h3>
                     </div>
-                    {tool.status && (
-                      <div
-                        className={`w-fit h-fit px-2 py-1 rounded-full font-medium outline outline-1 text-xs ${
-                          tool.status === "Learning"
-                            ? "bg-yellow-100 text-yellow-500 outline-yellow-500 dark:bg-yellow-400/75 dark:text-yellow-100 dark:outline-yellow-400"
-                            : "bg-orange-100 text-orange-500 outline-orange-500 dark:bg-orange-400/75 dark:text-orange-300 dark:outline-orange-400"
-                        }`}
-                      >
-                        {tool.status}
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>
             </h1>
           </div>
         </div>
+
+        {/* LEARNING */}
         <div className="flex flex-col gap-2 rounded-xl w-[90vw] lg:w-[47rem]">
           <div className="flex flex-row justify-between">
-            <h1 className="font-jet text-l font-medium  text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
+            <h1 className="font-jet text-l font-medium text-zinc-800 dark:text-zinc-50 flex flex-col gap-2 w-full">
               \\things im learning
-              <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-2  grid-auto-flow">
+              <div className="grid gap-2 md:grid-cols-2 lg:grid-cols-2 grid-auto-flow">
                 {sectionLearning.map((tool, index) => (
                   <div
                     key={index}

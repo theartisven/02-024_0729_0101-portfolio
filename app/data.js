@@ -3,7 +3,7 @@ import { FaMobileButton } from "react-icons/fa6";
 import { CgFigma } from "react-icons/cg";
 import { IoDesktop, IoLogoVercel } from "react-icons/io5";
 import { RiHeart3Fill, RiNextjsFill } from "react-icons/ri";
-import { SiAdobexd } from "react-icons/si";
+import { TbBrandAdobeXd } from "react-icons/tb";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { HiCursorClick } from "react-icons/hi";
 
@@ -43,7 +43,7 @@ export const caseStudies = [
     rightIcon: [<IoDesktop key="ricon" />],
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
-    icon: [<SiAdobexd key="icon" />],
+    icon: [<TbBrandAdobeXd key="icon" />],
     href: "/humble-sustainability",
     status: "active",
   },
@@ -89,7 +89,7 @@ export const caseStudies = [
     rightIcon: [<FaMobileButton key="ricon" />],
     colorBG: "bg-yellow-500",
     colorFont: "text-yellow-500",
-    icon: [<SiAdobexd key="icon" />],
+    icon: [<TbBrandAdobeXd key="icon" />],
     href: "/cpu-app",
     status: "active",
   },
