@@ -1,26 +1,28 @@
 export const cards = [
   {
-    title: "intro",
+    title: "overview",
     description:
-      "This project is created to manage customer interaction via social platform like WhatsApp and Line. This tools created manage interactions by 2 part: 1 is traditional customer dashboard, 2 is create a node based chatbot, and last is use the LLM to analyze manual and book.",
+      "This project focused on creating a customer engagement platform that enables businesses to manage interactions across messaging channels such as WhatsApp. The platform combined traditional customer service tools with a node-based chatbot builder, allowing business users to create customizable automated conversation flows without requiring technical expertise.\n\nIn addition to chatbot management, the platform included dashboard capabilities, communication management tools, and AI-powered features designed to help businesses organize customer interactions more effectively. As a new product initiative for the company, the goal was to provide a centralized solution for managing customer communication and automation workflows.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 1,
   },
+
   {
-    title: "involvement",
+    title: "design process",
     description:
-      "In the final stages, my involvement centered on taking over from the previous designer. My tasks included creating icons, configuring settings, and designing the dashboard. When designing the icons, I crafted multiple options to ensure selection of the most suitable ones, especially since the icons didn't adhere to UX conventions. Regarding configuration and dashboard creation, I translated multiple Business Requirement Documents (BRDs) into designs while maintaining consistency with the existing design style.",
+      "I joined the project during the later stages of development, after approximately 80% of the product had already been designed by an external designer. My primary responsibility was to extend the existing product while maintaining visual and interaction consistency across new features and modules.\n\nBeyond icon creation, settings, and dashboard design, I worked on multiple management and operational workflows, including UCW Management, Channel UCQ Management, Call Recording Management, Call Features, Gen AI Management, and WhatsApp Management flows. Much of the work involved translating business requirements into functional interfaces while ensuring they aligned with the established design direction.\n\nOne of the platform's core features was a node-based chatbot builder. Since the interaction model was already familiar within the industry, the design followed common node-editor patterns used in similar tools. The challenge was not creating a new interaction model, but integrating additional functionality into an existing system while preserving usability and consistency.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 2,
   },
+
   {
-    title: "conclusion",
+    title: "leadership & outcome",
     description:
-      "I really wish they had included me from the get-go, especially since the previous designer was from outside our company. It would have been great to have been part of those initial discussions. Plus, there was a bit of a communication gap when it came to explaining why certain design choices were made. This made it tough to grasp the thinking behind those decisions and to keep everything flowing smoothly in the project.",
+      "The biggest challenge of this project was inheriting a product that had already been largely defined by an external designer. Because most major decisions had already been finalized, opportunities to improve or rethink existing experiences were limited. Additionally, there was little visibility into the reasoning behind previous design decisions, making it difficult to evaluate trade-offs or propose alternative approaches.\n\nDespite these constraints, I was responsible for ensuring that newly designed features remained consistent with the overall product experience. This required careful interpretation of business requirements, attention to design details, and close collaboration with stakeholders throughout implementation.\n\nOne of the most valuable lessons from this project was the importance of design documentation and knowledge transfer. Taking ownership of an existing product without access to design rationale highlighted how critical documentation is for maintaining consistency, supporting future designers, and enabling long-term product evolution. The experience strengthened my ability to adapt quickly, work within constraints, and contribute effectively to products already in active development.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",

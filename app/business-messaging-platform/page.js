@@ -99,9 +99,9 @@ export default function CaseStudy2() {
           <div className="flex flex-col gap-2">
             <a
               href="https://www.youtube.com/watch?v=4xk_JyNoYdY"
-              className=" underline text-xs"
+              className=" underline text-xs  dark:text-green-500 "
             >
-              https://tinyurl.com/584r5mku
+              link
             </a>
           </div>
         </div>

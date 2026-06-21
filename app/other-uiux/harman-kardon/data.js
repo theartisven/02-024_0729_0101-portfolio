@@ -1,26 +1,28 @@
 export const cards = [
   {
-    title: "intro",
+    title: "overview",
     description:
-      "Harman Kardon delivers premium audio solutions that redefine the way you experience sound. With a legacy spanning over 65 years, our commitment to innovation and craftsmanship shines through in every product we create. Whether you're enjoying music, movies, or gaming, our meticulously engineered speakers and headphones immerse you in unparalleled audio quality, with crisp highs, rich midranges, and deep, powerful bass. Our intuitive user interfaces ensure seamless integration into your lifestyle, making it effortless to control and customize your audio experience. Elevate your senses with Harman Kardon, where cutting-edge technology meets timeless elegance.",
+      "This project was created as a proposal for Harman Kardon's Singapore branch. As a globally recognized premium audio brand, Harman Kardon is known for combining high-performance sound engineering with refined industrial design. Their products often incorporate premium materials and distinctive visual aesthetics that position them within the premium consumer electronics market.\n\nThe objective of the proposal was to explore how these brand qualities could be translated into a digital experience that not only showcased the product lineup but also reinforced the company's commitment to craftsmanship, quality, and innovation.",
     colorBG: "bg-yellow-500",
     colorOutline: "outline-yellow-500",
     colorFont: "text-yellow-500",
     number: 1,
   },
+
   {
-    title: "involvement",
+    title: "design process",
     description:
-      "This is one of our proposals for their branch in Singapore. I am the primary designer for this project. There are a few important factors to consider, including the overall aesthetic and the nature of the company. Harman Kardon collaborates to produce high-quality audio equipment. One notable aspect of their catalogue is the use of premium materials, sometimes uncommonly associated with audio equipment. I aim to ensure that our design not only reflects this commitment to quality but also provides an exceptional e-commerce experience.",
+      "As one of the designers involved in the proposal, I contributed to developing design concepts that aligned with Harman Kardon's premium brand positioning. The design approach focused on balancing a sophisticated visual presentation with the usability expectations of a modern ecommerce experience.\n\nA key consideration throughout the process was understanding how Harman Kardon's products are perceived. Beyond audio performance, the brand emphasizes materials, craftsmanship, and design quality. This influenced decisions related to visual hierarchy, product presentation, imagery, typography, and overall layout. The goal was to create an experience that felt premium and intentional while remaining accessible and easy to navigate.\n\nBecause the project was developed as a proposal, much of the design work involved interpreting the brand's identity and translating those insights into concepts that could communicate a clear vision for the client's digital presence.",
     colorBG: "bg-yellow-500",
     colorOutline: "outline-yellow-500",
     colorFont: "text-yellow-500",
     number: 2,
   },
+
   {
-    title: "conclusion",
+    title: "reflection",
     description:
-      "As we prepare this proposal for potential collaboration, it's important to note that our design approach is based on assumptions about the nature of the business. We are taking into consideration the core essence of the company and its industry dynamics to craft a solution that aligns with its objectives and values. project.",
+      "One of the most interesting aspects of this project was designing within a proposal context where direct access to users and stakeholders was limited. This required relying on brand analysis, industry research, and ecommerce best practices to guide design decisions.\n\nThe experience reinforced the importance of understanding a company's identity before designing solutions. Rather than focusing solely on interface design, the challenge was to capture the essence of the brand and express it through a digital experience. Every design decision needed to support the perception of quality, trust, and premium craftsmanship.\n\nAlthough the project remained at the proposal stage, it provided valuable experience in concept development, collaborative design, and presenting ideas within a business context. It also strengthened my ability to translate brand values into user experiences while working as part of a design team.",
     colorBG: "bg-yellow-500",
     colorOutline: "outline-yellow-500",
     colorFont: "text-yellow-500",

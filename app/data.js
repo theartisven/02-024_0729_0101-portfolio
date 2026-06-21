@@ -94,7 +94,7 @@ export const caseStudies = [
     status: "active",
   },
   {
-    title: "Honda Orico",
+    title: "Liva Auto",
     description:
       "Developed a user-friendly platform for buying and selling certified used Honda vehicles. Focused on trust, ease of navigation, and vehicle detail clarity for the Indonesian market.",
     tags: ["\\\\07", "UI & UX (07/11)"],
@@ -103,8 +103,8 @@ export const caseStudies = [
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
     icon: [<CgFigma key="icon" />],
-    href: "/honda-orico",
-    status: "inactive",
+    href: "/liva-auto",
+    status: "active",
   },
   {
     title: "Kawasaki India",
@@ -116,10 +116,22 @@ export const caseStudies = [
     colorBG: "bg-green-500",
     colorFont: "text-green-500",
     icon: [<CgFigma key="icon" />],
-    href: "/kawasaki",
-    status: "inactive",
+    href: "/kawasaki-india",
+    status: "inactive"
   },
   
-
+    {
+    title: "EYS Internation and SG",
+    description:
+      "Explored user interface concepts for Harman Kardon’s audio products, focusing on elegant control systems for immersive media experiences. Emphasized sleek visual design and intuitive interaction models to align with the brand’s premium positioning.",
+    tags: ["Other UI / UX (01/03)", "UI & UX (09/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<IoDesktop key="ricon" />],
+    colorBG: "bg-yellow-500",
+    colorFont: "text-yellow-500",
+    icon: [<CgFigma key="icon" />],
+    href: "/other-uiux/harman-kardon",
+    status: "inactive",
+  },
 
 ];

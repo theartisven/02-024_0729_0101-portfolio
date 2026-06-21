@@ -1,26 +1,28 @@
 export const cards = [
   {
-    title: "intro",
+    title: "overview",
     description:
-      "Humble is a startup based on circular economy helping businesses sell surplus products sustainably. They recover high-value items for sale on Thrift by Humble and work with B2B partners to recycle or resell the rest. ",
+      "Humble is a startup focused on the circular economy, helping businesses reduce waste by recovering, reselling, and recycling surplus products. Through its platform, high-value items can be resold while other products are redirected through recycling and redistribution channels, supporting more sustainable business operations.\n\nDuring my internship, I worked on the company's website experience, with a particular focus on onboarding and communicating Humble's value proposition. One of the key challenges was translating a business model centered around sustainability and circular economy principles into a digital experience that was easy for users to understand, regardless of their cultural or professional background.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 1,
   },
+
   {
-    title: "involvement",
+    title: "design process",
     description:
-      "While I'm not directly involved in user interviews, but I collaborate with researchers to ensure that the insights gathered inform my design decisions. I work closely with CEOs to explain how these insights shape the wireframes, low-fidelity mockups, and prototypes. This collaborative approach ensures that the final design reflects user needs and aligns with business goals.",
+      "My primary responsibilities included creating user flows, wireframes, and interactive prototypes for the onboarding experience and homepage. Since the website served as an introduction to the company, much of the design effort focused on clearly explaining how the business operated and how its services created value for both consumers and business partners.\n\nAlthough I was not directly involved in user research, I worked closely with researchers and stakeholders to understand the company's objectives and incorporate research insights into the design process. These insights helped shape content structure, user journeys, and messaging priorities.\n\nThroughout the project, I collaborated closely with company leadership to ensure that design decisions aligned with business goals. A major consideration was balancing usability with the need to communicate a relatively complex business model in a simple and approachable way.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 2,
   },
+
   {
-    title: "conclusion",
+    title: "leadership & outcome",
     description:
-      "It's clear there were some bumps in the road regarding design decisions. Initially, my suggestion for a cleaner design didn't quite hit the mark with the CEOs and their external UX consultant. However, after I left, they eventually circled back to a design similar to what I had proposed. It was a bit surprising to see, but it taught me the value of sticking to my instincts. Even though I had to step out of my comfort zone to accommodate their preferences, it was ultimately a learning experience that highlighted the importance of open communication and trusting in each other's expertise.",
+      "One of the most memorable aspects of this project was navigating differing perspectives on design direction. Discussions often centered around visual style and how the platform should present itself to users. While some of my recommendations were not initially adopted, I later observed the product evolve toward a direction similar to the one I had originally proposed.\n\nAs one of my first projects directly connected to a real business, the experience came with additional pressure and responsibility. It taught me the importance of understanding business objectives, communicating design rationale effectively, and building confidence when presenting recommendations to stakeholders.\n\nThe most valuable lesson from this project was learning how to better justify design decisions. Rather than relying solely on design intuition, I learned to connect recommendations back to user needs, business goals, and research insights. This experience strengthened my communication skills and helped shape how I approach stakeholder discussions in future projects.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",

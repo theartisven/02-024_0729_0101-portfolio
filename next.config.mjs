@@ -8,6 +8,8 @@ const nextConfig = {
 
 		return config;
 	},
+	 // Add this line to silence the error and use Turbopack
+    turbopack: {}, 
 };
 
 export default nextConfig;

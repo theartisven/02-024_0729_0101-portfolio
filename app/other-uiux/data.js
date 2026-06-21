@@ -14,6 +14,19 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 
 import { HiCursorClick } from "react-icons/hi";
 export const caseStudies = [
+    {
+    title: "Add2Cart",
+    description:
+      "Created a quick prototype for a startup Add2Cart. Delivered interaction flows and UI design optimized for conversion during campaign periods for mobile version.",
+    tags: ["Other UI / UX  (03/03)", "UI & UX (11/11)"],
+    leftIcon: [<HiCursorClick key="licon" />],
+    rightIcon: [<FaMobileButton key="ricon" />],
+    colorBG: "bg-green-500",
+    colorFont: "text-green-500",
+    icon: [<CgFigma key="icon" />],
+    href: "/other-uiux/add2cart",
+    status: "active",
+  },
   {
     title: "Harman Kardon UI Exploration",
     description:
@@ -25,8 +38,9 @@ export const caseStudies = [
     colorFont: "text-yellow-500",
     icon: [<CgFigma key="icon" />],
     href: "/other-uiux/harman-kardon",
-    status: "active",
+    status: "inactive",
   },
+
   {
     title: "Pedigree Club PH",
     description:
@@ -38,19 +52,7 @@ export const caseStudies = [
     colorFont: "text-yellow-500",
     icon: [<CgFigma key="icon" />],
     href: "/other-uiux/pedigree-club-ph",
-    status: "active",
-  },
-  {
-    title: "Add2Cart",
-    description:
-      "Created a quick prototype for a startup Add2Cart. Delivered interaction flows and UI design optimized for conversion during campaign periods for mobile version.",
-    tags: ["Other UI / UX  (03/03)", "UI & UX (11/11)"],
-    leftIcon: [<HiCursorClick key="licon" />],
-    rightIcon: [<FaMobileButton key="ricon" />],
-    colorBG: "bg-green-500",
-    colorFont: "text-green-500",
-    icon: [<CgFigma key="icon" />],
-    href: "/",
     status: "inactive",
   },
+
 ];

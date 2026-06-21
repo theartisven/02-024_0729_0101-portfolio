@@ -1,26 +1,28 @@
 export const cards = [
   {
-    title: "intro",
+    title: "overview",
     description:
-      "This project focuses primarily on developing internal tools tailored for an ecommerce platform, predominantly targeting Shopee and Lazada. These platforms, while similar, differ in their data sources, distinguishing them as two distinct but related projects within the scope.",
+      "Digital Shelf and Digital Ecommerce are internal analytics platforms developed to help teams transform large volumes of ecommerce data into actionable insights for clients. The products primarily focused on data from Shopee and Lazada, the two major ecommerce platforms supported by the agency.\n\nAlthough both products served similar business objectives, they relied on different data sources and reporting structures. Their primary users included brand managers and analysts who needed access to performance metrics, competitive insights, and operational data through centralized dashboards.\n\nI joined the team as an intern and quickly became the sole UI/UX designer supporting both initiatives. While the Digital Shelf project was already approximately 75% complete, the Digital Ecommerce platform required designing new experiences using existing foundations while improving usability and consistency across the ecosystem.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 1,
   },
+
   {
-    title: "involvement",
+    title: "design process",
     description:
-      "In both projects, my role is quite similar. During my first week intern, I was assigned to both the Digital Shelf and Digital Ecommerce initiatives. For the Digital Shelf project, my responsibility is to take over and complete the remaining design tasks. On the other hand, for the Digital Ecommerce project, I am tasked with designing it from scratch. This involves creating user stories, conducting user interviews, overseeing quality assurance, and developing the visual design.",
+      "My responsibilities differed between the two products. For Digital Shelf, I inherited an existing project and was responsible for completing the remaining design work. One of the biggest challenges was the lack of documentation and design rationale, making it difficult to understand previous decisions and evaluate whether they still aligned with business and user needs.\n\nFor Digital Ecommerce, I was involved in designing the product from the ground up. To accelerate development, I leveraged components and patterns from Digital Shelf while gradually refining the experience to improve usability and consistency. Stakeholder interviews played an important role in shaping the product direction, revealing that the platform would be used by a broader audience than initially expected, including operational teams beyond analysts.\n\nA significant portion of the design effort focused on dashboard usability and data visualization. Presenting large amounts of information in a clear and accessible way required careful attention to chart hierarchy, color coding, and information architecture. Throughout the project, I continuously improved existing design patterns and contributed to the evolution of the platform's design standards.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
     number: 2,
   },
+
   {
-    title: "conclusion",
+    title: "leadership & outcome",
     description:
-      "As the sole UI/UX designer on our regional team, I juggled multiple roles to ensure success in both the Digital Shelf and Digital Ecommerce projects. Given our agile timelines, conducting thorough user testing proved challenging. In hindsight, I should have clarified the reasoning behind certain design decisions when taking over the Digital Shelf project. Moving forward, I'm focused on enhancing the representation of line graphs to improve data visualization across our projects.",
+      "As the sole UI/UX designer on the regional team, I was responsible for balancing multiple projects while working alongside a cross-functional team of more than ten members. To manage competing priorities, I evaluated requests based on business impact, delivery timelines, and project dependencies.\n\nBeyond executing designs, I became responsible for maintaining consistency between products, improving existing design foundations, and ensuring that stakeholder requirements were translated into usable experiences. The projects were ultimately launched after my internship concluded, giving the team production-ready solutions for presenting ecommerce insights and analytics.\n\nOne of the most valuable lessons from these projects was understanding the importance of conducting a thorough design audit when taking ownership of an existing product. Inheriting a project without documentation highlighted how critical design rationale, documentation, and system thinking are for long-term product success. The experience strengthened my ability to work independently, adapt quickly, and deliver design solutions within fast-moving product environments.",
     colorBG: "bg-green-500",
     colorOutline: "outline-green-500",
     colorFont: "text-green-500",
