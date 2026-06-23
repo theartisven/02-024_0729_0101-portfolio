@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className="flex flex-row justify-between items-center  h-[6.66%] md:rounded-md overflow-hidden w-full lg:max-w-[992px] xl:max-w-[1200px] relative min-h-[3rem]">
       <Link href="/">
         <img
-          src="../img/asset/logo.png"
+          src="../img/asset/logo.webp"
           width="44"
           height="44"
           alt="Sven Hero Kaufmann's Personal Logo"

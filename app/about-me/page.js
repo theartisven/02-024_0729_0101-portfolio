@@ -145,9 +145,9 @@ export default function AboutMe() {
                     key={index}
                     className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col gap-2 relative"
                   >
-                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium">
+                    <h2 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium">
                       {experience.title}
-                    </h3>
+                    </h2>
                     <h4 className="font-jet text-sm text-zinc-500 dark:text-zinc-400">
                       {experience.company}
                     </h4>
@@ -155,7 +155,7 @@ export default function AboutMe() {
                       {experience.date}
                     </h4>
                     {experience.isCurrent && (
-                      <div className="absolute bottom-2 right-2 lg:bottom-2 bg-green-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-zinc-50 text-xs">
+                      <div className="absolute bottom-2 right-2 lg:bottom-2 bg-purple-500 w-fit h-fit px-2 py-1 rounded-full flex items-center gap-2 text-zinc-50 text-xs">
                         <RiCheckFill />
                       </div>
                     )}
@@ -177,9 +177,9 @@ export default function AboutMe() {
                     key={index}
                     className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col gap-2 relative"
                   >
-                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
+                    <h2 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                       {course.title}
-                    </h3>
+                    </h2>
                     <h4 className="font-jet text-sm text-zinc-500 dark:text-zinc-400">
                       {course.issuer}
                     </h4>
@@ -207,9 +207,9 @@ export default function AboutMe() {
                     key={index}
                     className="bg-zinc-50 dark:bg-zinc-900 p-4 rounded-lg shadow-sm flex flex-col md:flex-row gap-2 xlitems-center justify-between"
                   >
-                    <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
+                    <h2 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                       {language.name}
-                    </h3>
+                    </h2>
                   </div>
                 ))}
               </div>
@@ -232,9 +232,9 @@ export default function AboutMe() {
                       <div className="text-zinc-500 dark:text-zinc-50">
                         {tool.icon}
                       </div>
-                      <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
+                      <h2 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                         {tool.name}
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                 ))}
@@ -258,9 +258,9 @@ export default function AboutMe() {
                       <div className="text-zinc-500 dark:text-zinc-50">
                         {tool.icon}
                       </div>
-                      <h3 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
+                      <h2 className="font-jet text-base text-zinc-800 dark:text-zinc-50 font-medium text-balance">
                         {tool.name}
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                 ))}
